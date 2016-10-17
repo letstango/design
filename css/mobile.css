@@ -1,0 +1,776 @@
+/* Main Stylesheet */
+
+/******************/
+/*** TYPOGRAPHY ***/
+/******************/
+
+/**********************/
+/*** END TYPOGRAPHY ***/
+/**********************/
+
+
+
+
+
+/*********************/
+/*** WEBSITE ICONS ***/
+/*********************/
+
+/*************************/
+/*** END WEBSITE ICONS ***/
+/*************************/
+
+
+
+
+
+
+
+/**********************/
+/*** GLOBAL CLASSES ***/
+/**********************/
+@media only screen {
+    
+    .main {
+        width: 100%;
+        max-width: 1280px;
+        /* For browsers which support media queries, this will show a responsive website */
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .xs-hide {
+        display: none!important;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    .md-hide {
+        display: none;
+    }
+    
+}
+/**************************/
+/*** END GLOBAL CLASSES ***/
+/**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************/
+/*** BASIC ELEMENTS ***/
+/**********************/
+@media only screen {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    /*
+        Menu Toggle Animations
+    */
+    body {
+        transition: 0.4s;
+        padding-left: 0;
+    }
+    
+    body.animate {
+        transition: 0.4s;
+        padding-left: 248px;
+    }
+    
+    body.animate:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        opacity: 0.15;
+        background: #000000;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #wrapper {
+        min-width: 768px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #wrapper {
+        min-width: 320px;
+    }
+}
+/**************************/
+/*** END BASIC ELEMENTS ***/
+/**************************/
+
+
+
+
+
+
+
+
+/******************/
+/*** H ELEMENTS ***/
+/******************/
+@media only screen and (max-width: 991px) {
+    h3,
+    .h3 {
+        font-size: 15px;
+    }
+}
+/**********************/
+/*** END H ELEMENTS ***/
+/**********************/
+
+
+
+
+
+
+
+
+/*********************/
+/*** FORM ELEMENTS ***/
+/*********************/
+
+/*************************/
+/*** END FORM ELEMENTS ***/
+/*************************/
+
+
+
+
+
+
+
+
+/***********************/
+/*** BUTTONS & LINKS ***/
+/***********************/
+
+/***************************/
+/*** END BUTTONS & LINKS ***/
+/***************************/
+
+
+
+
+
+
+
+/**********************/
+/*** WEBSITE HEADER ***/
+/**********************/
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+  
+/* 
+    Header Middle
+*/
+    /* Header Main */
+    #header-main {
+        width: 44%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1120px) {
+/*
+    Header Base
+*/
+    /* Primary Menu */
+    #primary-menu > ul > li {
+        margin: 0 0.5%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+/*
+    Header Base
+*/
+    #primary-menu ul.nav-subcategory {
+        width: 100%;
+        display: table!important;
+    }
+
+    #primary-menu ul.nav-subcategory > li {
+        display: table-cell!important;
+        vertical-align: top;
+    }
+    
+    #primary-menu ul.nav-items {
+        display: block!important;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+/*
+    Header Middle
+*/
+    #header-middle .fa-bars {
+        display: inline-block;
+    }
+    
+/* 
+    Header Main 
+*/
+    #header-main {
+        width: 100%;
+        float: none;
+        clear: both;
+        margin: 50px 0 0 0;
+    }
+    
+/* 
+    Header Auction 
+*/
+    #header-auction {
+        display: none;
+    }    
+    
+/*
+    Top Primary Menu
+*/
+    ul#top-primary-menu > li {
+        margin-left: 18px;
+    }
+    
+/*
+    Top Secondary Menu
+*/
+    ul#top-secondary-menu > li {
+        margin-left: 18px;
+    }
+    
+
+    
+/*
+    Header Base
+*/
+    #header-base {
+        width: 248px;
+        height: 100%;
+        overflow-y: scroll;
+        font-size: 12px;
+        transition: 0.4s;
+        position: fixed;
+        top: 0;
+        left: -248px;
+    }
+    
+    body.animate #header-base {
+        transition: 0.4s;
+        left: 0;
+    }
+    
+/* 
+    Primary Menu 
+*/
+    #primary-menu {
+        padding: 0 0 0 16px;
+    }
+    
+    #primary-menu > ul > li {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    #primary-menu > ul > li > a {
+        width: 172px;
+        font-weight: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 20px;
+    }
+    
+    #primary-menu > ul > li:hover > a {
+        color: #ffffff; 
+    }
+    
+    #primary-menu > ul > li > a > .fa-chevron-down {
+        display: none;
+    }
+    
+    #primary-menu .fa-angle-right {
+        font-size: 1.25em;
+        display: inline-block;
+        vertical-align: top;
+        margin: 1px 5px 0 0;
+    }
+    
+    #primary-menu .fa-plus-square-o,
+    #primary-menu .fa-minus-square-o {
+        font-size: 1.55em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    
+    #primary-menu .dropdown-wrapper {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        top: 0;
+        background: none;
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #primary-menu ul.nav-subcategory {
+        display: none;
+        padding: 0 0 0 10px;
+    }
+    
+    #primary-menu ul.nav-items {
+        display: none;
+        padding: 0 0 0 10px;
+    }
+    
+    #primary-menu ul.nav-subcategory > li,
+    #primary-menu ul.nav-items > li {
+        display: block;
+        margin: 20px 0;
+        padding-right: 0;
+    }       
+    
+    #primary-menu ul.nav-subcategory > li.featured-ad {
+        display: none;
+    }
+    
+    #primary-menu ul.nav-subcategory > li > .fa-plus-square-o,
+    #primary-menu ul.nav-subcategory > li > .fa-minus-square-o {
+        vertical-align: top;
+        margin: 1px 0 0 0;
+    }
+    
+    #primary-menu ul.nav-subcategory > li > a,
+    #primary-menu ul.nav-items > li > a {
+        width: 162px;
+        font-size: 1em;
+        font-weight: normal;
+        color: #ffffff;
+        text-transform: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 20px;
+    }
+    
+    #primary-menu ul.nav-items > li > a {
+        width: 158px;
+    }
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+/*
+    Header Top
+*/
+    #header-top {
+        display: none;
+    }
+    
+
+/*
+    Header Middle
+*/
+    /* Header Shopping Cart */
+    #header-shopping-cart .fa-shopping-cart {
+        font-size: 3.55em;
+    }
+    
+    #header-shopping-cart .fa-shopping-cart .quantity {
+        top: 20%;
+    }
+    
+    #header-shopping-cart .cart-dropdown {
+        min-width: 290px;
+        right: -15px;
+    }
+    
+    #header-shopping-cart .cart-dropdown:before {
+        right: 20px;
+    }
+}
+/**************************/
+/*** END WEBSITE HEADER ***/
+/**************************/
+
+
+
+
+/************************/
+/*** WEBSITE CONTENTS ***/
+/************************/
+@media only screen and (max-width: 1280px) {
+  
+/* 
+    Banner Aside
+*/
+    #banner-aside {
+        font-size: 9px;
+    }
+    
+    #banner-aside img {
+        max-width: 100px;
+    }
+    
+    #banner-aside img.md-size {
+        max-width: 80px;
+    }
+    
+/*
+    Product Showcase
+*/
+    .product-showcase {
+        font-size: 1.5em;
+    }
+    
+/*
+    Info Widget
+*/
+    ul.info-widget {
+        font-size: 9px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+  
+/* 
+    Banner Aside
+*/
+    #banner-aside {
+        font-size: 9px;
+    }
+    
+    #banner-aside img {
+        max-width: 80px;
+        top: 45px;
+    }
+    
+    #banner-aside img.md-size {
+        max-width: 60px;
+        top: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+/*
+    Page Content
+*/
+    #page-content {
+        font-size: 9px;
+    }
+    
+/*
+    Banner
+*/
+    #banner-wrap .col-md-8 {
+        width: 100%;
+        padding-right: 15px;
+    }
+    
+    #banner {
+        font-size: 9px;
+    }
+    
+/*
+    Banner Aside
+*/
+    #banner-aside {
+        display: none;
+    }
+    
+/*
+    Product Showcase
+*/
+    .product-showcase {
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    
+/*
+    Page Content
+*/
+    #page-content {
+        font-size: 8px;
+    }
+/*
+    Banner
+*/
+    #banner-nav {
+        display: none;
+    }
+    
+/*
+    Featured Products
+*/
+    .featured-products .heading {
+        text-align: right;
+        margin: 0 0 3em 0;
+    }
+    
+    .featured-products .heading h2 {
+        display: block;
+        text-align: left;
+        padding-bottom: 0;
+    }
+    
+    .featured-products .heading:after {
+        display: none;
+    }
+    
+    .featured-products .heading .button {
+        vertical-align: middle;
+        float: none;
+        margin-top: 0;
+    }
+    
+/*
+    Product Showcase
+*/
+    .product-showcase {
+        font-size: 1.5em;
+    }
+    
+    .product-showcase > div {
+        width: 100%;
+        display: table-row;
+    }
+    
+    .product-showcase .col-right > ul:first-child {
+        margin: 15px 0 0 0;
+    }
+    
+    .product-showcase .col-right > ul > li {
+        max-width: 0;
+        overflow: hidden;
+    }
+    
+    .product-showcase .col-right > ul > li > a {
+        width: 98%;
+        margin: 0;
+        padding: 10px 10px 20px 10px;
+    }
+    
+    .product-showcase .col-right > ul > li:first-child > a {
+        margin-right: 2%;
+    }
+    
+    .product-showcase .col-right .title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    .product-showcase .primary-link {
+        width: 100%;
+        text-align: center;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    
+/*
+    Featured Carousel
+*/
+    #featured-carousel-wrapper, 
+    #primary-carousel-wrapper, 
+    #secondary-carousel-wrapper {
+        padding: 0 20px;
+    }
+    
+    #featured-carousel .slick-next,
+    #primary-carousel .slick-next,
+    #secondary-carousel .slick-next {
+        right: -25px;
+    }
+    
+    #featured-carousel .slick-prev,
+    #primary-carousel .slick-prev,
+    #secondary-carousel .slick-prev {
+        left: -25px;
+    }
+}
+/****************************/
+/*** END WEBSITE CONTENTS ***/
+/****************************/
+
+
+
+
+
+
+
+
+/**********************/
+/*** WEBSITE FOOTER ***/
+/**********************/
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+/*
+    Footer Base
+*/
+    
+/*
+    Footer Base Primary Column
+*/
+    #ft-base-primary-col {
+        width: 50%;
+    }
+
+/* 
+    Footer Base Secondary Column 
+*/
+    #ft-base-secondary-col {
+        width: 50%;
+        padding-top: 10px;
+    }
+    
+    #ft-base-secondary-col ul {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+/*
+    Footer Top
+*/
+    #footer-top {
+        font-size: 9px;
+    }
+    
+/*
+    SignUp Form
+*/
+    #signup-form label {
+        margin-top: 2px;    
+    }
+    
+    #signup-form .field-wrap {
+        width: 37%;
+        margin: 0 6%;
+    }
+    
+    #signup-form .field-wrap input[type="email"] {
+        height: 40px;
+    }
+    
+    #signup-form input[type="submit"] {
+        height: 100%;
+        padding: 0 20px;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+/*
+    Footer Top
+*/
+    #footer-top {
+        font-size: 8px;
+        text-align: center;
+    }
+    
+/*
+    SignUp Form
+*/
+    #signup-form label {
+        display: block;
+        float: none;
+    }
+    
+    #signup-form .field-wrap {
+        width: 90%;
+        max-width: 360px;
+        display: block;
+        float: none;
+        margin: 15px auto;
+    }
+    
+/*
+    Footer Middle
+*/
+    #footer-middle {
+        display: none;
+    }
+    
+/*
+    Footer Base
+*/
+    #footer-base {
+        padding: 5px 0 10px 0;
+    }
+    #footer-base > .main div {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    
+    #ft-base-secondary-col > ul {
+        margin: 0 0 1em 0;
+    }
+}
+/**************************/
+/*** END WEBSITE FOOTER ***/
+/**************************/
+
+
+
+
+
+
