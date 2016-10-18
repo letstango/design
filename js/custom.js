@@ -113,6 +113,12 @@ arrows: true,
   ]
 });
 
+
+
+$('#simple-carousel').slick({
+    dots: true
+});
+
 /*
     Product Rating
 */

@@ -539,7 +539,8 @@
 */
     #banner-wrap .col-md-8 {
         width: 100%;
-        padding-right: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
     
     #banner {
@@ -645,6 +646,10 @@
     #banner-nav {
         display: none;
     }
+       
+    #banner-carousel {
+        margin-bottom: 0;
+    }
     
 /*
     Featured Products
@@ -736,6 +741,36 @@
     #secondary-carousel .slick-prev {
         left: -25px;
     }
+    
+/*
+    Simple Carousel
+*/
+    #simple-carousel {
+        margin: 0 0 30px 0;
+    }
+
+    #simple-carousel img {
+        border-radius: 5px;
+    }
+
+    #simple-carousel .slick-dots {
+        bottom: -22px;
+    }
+
+    #simple-carousel .slick-dots li {
+        width: 10px;
+    }
+
+    #simple-carousel .slick-dots li button::before {
+        font-size: 20px;
+        color: #ebebeb;
+        opacity: 1;
+    }
+
+    #simple-carousel .slick-dots li.slick-active button::before {
+        color: #b2b2b2;
+    }
+
 }
 /****************************/
 /*** END WEBSITE CONTENTS ***/

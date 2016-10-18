@@ -1877,9 +1877,43 @@ ul.info-widget > li span {
     float: right;
 }
 
+
+/*
+    Simple Carousel
+*/
+#simple-carousel {
+    margin: 0 0 50px 0;
+}
+
+#simple-carousel img {
+    border-radius: 10px;
+}
+
+#simple-carousel .slick-dots {
+    bottom: 10px;
+}
+
+#simple-carousel .slick-dots li {
+    width: 10px;
+}
+
+#simple-carousel .slick-dots li button::before {
+    font-size: 25px;
+    color: #ebebeb;
+    opacity: 1;
+}
+
+#simple-carousel .slick-dots li.slick-active button::before {
+    color: #b2b2b2;
+}
+
 /*
     Product List
 */
+.product-list article {
+    margin: 0 0 40px 0;
+}
+
 .product-list figure > a > img {
     text-align: center;
     display: block;
