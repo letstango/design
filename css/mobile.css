@@ -33,7 +33,7 @@
     
     .main {
         width: 100%;
-        max-width: 1280px;
+        max-width: 1170px;
         /* For browsers which support media queries, this will show a responsive website */
     }
 }
@@ -179,6 +179,13 @@
 /**********************/
 /*** WEBSITE HEADER ***/
 /**********************/
+@media only screen and (min-width: 992px) {
+   #primary-menu > ul > li > a   {
+       position: relative;
+       z-index: 99999;
+    }
+
+}
 @media only screen and (min-width: 992px) and (max-width: 1280px) {
   
 /* 
@@ -490,6 +497,26 @@
         max-width: 60px;
         top: 30px;
     }
+    
+/*
+    Primary Content
+*/
+    #primary-content {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+/*
+    Primary Sidebar
+*/
+    #primary-sidebar .widget-section {
+        display: block!important;
+    }
+    
+    #primary-sidebar .widget {
+         display: block!important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -498,6 +525,13 @@
 */
     #page-content {
         font-size: 9px;
+    }
+    
+/*
+    Page Top Bar
+*/
+    .page-home #page-top-bar {
+        display: none;
     }
     
 /*
@@ -524,6 +558,67 @@
 */
     .product-showcase {
         font-size: 1.2em;
+    }
+    
+/*
+    Primary Content
+*/
+    #primary-content {
+        width: 100%;
+        float: none;
+    }
+    
+/*
+    Primary Sidebar
+*/
+    #primary-sidebar {
+        width: 100%;
+        max-height: 35px;
+        overflow: hidden;
+        float: none;
+        margin: 0 0 25px 0;
+    }
+    
+    #primary-sidebar.active {
+        max-height: 10000px;
+        transition: 3s;
+    }
+    
+    #primary-sidebar .widget-section {
+        border: 1px #eeeeee solid;
+        margin: 0 0 1px 0;
+    }
+    
+    #primary-sidebar .widget-section {
+        max-height: 35px;
+        overflow: hidden;
+    }
+    
+    #primary-sidebar.active .widget-section.active {
+        max-height: 10000px;
+        transition: 1s;
+    }
+    
+    #primary-sidebar header {
+        cursor: pointer;
+        background: #eeeeee;
+        border: 0;
+        padding: 8px 14px;
+    }
+    
+    #primary-sidebar .sidebar-title,
+    #primary-sidebar .sidebar-title .fa,
+    #primary-sidebar header .fa {
+        display: block;
+    }
+    
+    #primary-sidebar .sidebar-title .fa {
+        color: #686868;
+    }
+    
+    #primary-sidebar footer,
+    #primary-sidebar footer a {
+        display: block!important;
     }
 }
 

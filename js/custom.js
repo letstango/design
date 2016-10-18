@@ -1,6 +1,20 @@
 /*** JQUERY UI SCRIPTS ***/
 $(document).ready(function () {
+    
+/**********************/
+/*** Website Header ***/
+/**********************/    
+$('#header-middle').stickMe();
+    $.scrolltop();
+});
 
+
+
+
+
+/************************/
+/*** WEBSITE CONTENTS ***/
+/************************/
 /*
     Primary Menu toggle feature for tablets and mobile resolutions
 */
@@ -99,12 +113,73 @@ arrows: true,
   ]
 });
 
-    
-$('#header-middle').stickMe();
-    
-    $.scrolltop();
+/*
+    Product Rating
+*/
+$(".product-rating-view").starRating({
+    starSize: 15,
+    activeColor: 'red',
+    readOnly: true,
+    starGradient: {
+      start: '#ffbd00',
+      end: '#ffbd00'
+  }
 });
+
+
+/*  
+    Primary Sidebar Widget Toggle
+*/
+    $('#primary-sidebar .sidebar-title').on('click', function(e) {
+        e.preventDefault();
+        var width = $('#page-content').width();
+        
+        if (width <= 991) {
+            $('#primary-sidebar').toggleClass('active');
+            /*$('#primary-sidebar .widget-section').slideToggle();*/
+            $(this).find('.fa.fa-chevron-left').toggleClass('fa-chevron-down');
+        }
+    });
+
+    $('#primary-sidebar header > a').on('click', function(e) {
+        e.preventDefault();
+        
+        var width = $('#page-content').width();
+        
+        if (width <= 991) {
+            $(this).parent('header').parent('.widget-section').toggleClass('active');
+            /*$(this).parent('header').siblings('.widget').slideToggle();*/
+            $(this).find('.fa.fa-chevron-left').toggleClass('fa-chevron-down');
+        } 
+    });
+
+
+/*
+    Primary Sidebar Widget Toggle Function
+*/
+
+$('#primary-sidebar ul.filter-color').readmore({
+    speed: 500,
+    collapsedHeight: 20,
+    heightMargin: 16,
+    moreLink: '<footer><a href="#" class="toggle-link">Show More</a></footer>',
+    lessLink: '<footer><a href="#" class="toggle-link">Show Less</a></footer>'
+});
+
+$('#primary-sidebar form.filter-brand').readmore({
+    speed: 500,
+    collapsedHeight: 125,
+    heightMargin: 16,
+    moreLink: '<footer><a href="#" class="toggle-link">Show More</a></footer>',
+    lessLink: '<footer><a href="#" class="toggle-link">Show Less</a></footer>'
+});
+
+/*
+    Primary Sidebar - Range Slider
+*/
+$("#filter-price").slider({});
+
+$('#primary-sidebar .tooltip.tooltip-main.top .tooltip-inner').appendTo('#primary-sidebar .price-range .range-current');
+
 /*** END JQUERY UI SCRIPTS ***/
-
-
 

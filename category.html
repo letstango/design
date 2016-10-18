@@ -21,13 +21,17 @@
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shanti" rel="stylesheet">
     
     
-    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
 				
     <link rel="stylesheet" type="text/css" href="css/jquery.scrolltop.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css" />
     
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     
@@ -41,7 +45,7 @@
     
 </head>
     
-<body class="page-home">
+<body>
     
 <div id="wrapper">
 
@@ -674,814 +678,397 @@
     
     
 <div id="page-content">
-
+    
     <div id="page-top-bar">
         <div class="main">
-            <ul id="featured-items">
-                <li>
-                    <b>Trending Now</b>
-                    <ul>
-                        <li><a href="#">Samsung Galaxy Edge S7</a></li>
-                        <li><a href="#">Microsoft Surface Pro 4</a></li>
-                        <li><a href="#">Michael Kors Bangle</a></li>
-                        <li><a href="#">Jambu Women Sandal</a></li>
-                        <li><a href="#">Garmin Fenix 3 HR Sapphire</a></li>
-                    </ul>
-                </li>
+            <ul class="pagecrumb basic-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mobiles &amp; Tablets</a></li>
+                <li>Mobiles</li>
             </ul>
         </div>
     </div> <!-- END PAGE TOP BAR -->
     
-    <div class="content-wrap">    
-        <main>
-            <div class="main">
-            <div id="banner-wrap" class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                    <div id="banner">
-                        <div id="banner-carousel">
-                            <div><img src="images/homeHero-fashionbanner.jpg" alt="" /></div>
-                            <div><img src="images/homeHero-microsoftsurface2.jpg" alt="" /></div>
-                            <div><img src="images/homeHero-NIKONBrandBanner.jpg" alt="" /></div>
-                            <div><img src="images/homeHero-Banner-Blog.jpg" alt="" /></div>
-                        </div>
+    <div class="content-wrap">
+        <div class="main clearfix">
+            <aside id="primary-sidebar">
+                <a href="#" class="sidebar-title txt-base">Filter <i class="fa fa-chevron-left"></i></a>
+                <div class="widget-section">
+                    <header><a href="#">Color <i class="fa fa-chevron-left"></i></a></header>
 
-                        <div id="banner-nav">
+                    <div class="widget">
+                        <input type="search" class="input-basic" value="Search an option ..." />
 
-                            <div><h4>Mid Season Sale</h4> <em>30% Off</em> <i></i></div>
-                            <div><h4>Microsoft</h4> <em>Surface Pro 4</em> <i></i></div>
-                            <div><h4>Nikon Cameras</h4> <em>Best Deals</em> <i></i></div>
-                            <div><h4>Good Reads</h4> <em>News &amp; Reviews</em> <i></i></div>
-                        </div>
-                    </div> <!-- END BANNER -->
-                </div> <!-- END COLUMN -->
+                        <ul class="filter-color basic-list clipped">
+                            <li><a href="#" title="Sky Blue" class="sky-blue"><i>Sky Blue</i></a></li>                 
+                            <li><a href="#" title="Brown" class="brown"><i>Brown</i></a></li>
+                            <li><a href="#" title="Yellow" class="yellow"><i>Yellow</i></a></li>
+                            <li><a href="#" title="Gold" class="gold"><i>Gold</i></a></li>
+                            <li><a href="#" title="Space Gray" class="space-gray"><i>Space Gray</i></a></li>
+                            <li><a href="#" title="Green" class="green"><i>Green</i></a></li>
+                            <li><a href="#" title="Blue" class="blue"><i>Blue</i></a></li>
+                            <li><a href="#" title="Sky Blue" class="sky-blue"><i>Sky Blue</i></a></li>                 
+                            <li><a href="#" title="Brown" class="brown"><i>Brown</i></a></li>
+                            <li><a href="#" title="Yellow" class="yellow"><i>Yellow</i></a></li>
+                            <li><a href="#" title="Gold" class="gold"><i>Gold</i></a></li>
+                            <li><a href="#" title="Space Gray" class="space-gray"><i>Space Gray</i></a></li>
+                            <li><a href="#" title="Green" class="green"><i>Green</i></a></li>
+                            <li><a href="#" title="Blue" class="blue"><i>Blue</i></a></li>
+                            <li><a href="#" title="Sky Blue" class="sky-blue"><i>Sky Blue</i></a></li>                 
+                            <li><a href="#" title="Brown" class="brown"><i>Brown</i></a></li>
+                            <li><a href="#" title="Yellow" class="yellow"><i>Yellow</i></a></li>
+                            <li><a href="#" title="Gold" class="gold"><i>Gold</i></a></li>
+                            <li><a href="#" title="Space Gray" class="space-gray"><i>Space Gray</i></a></li>
+                            <li><a href="#" title="Green" class="green"><i>Green</i></a></li>
+                            <li><a href="#" title="Blue" class="blue"><i>Blue</i></a></li>
+                        </ul> <!-- END FILTER COLOR -->
 
-                <div id="banner-aside" class="col-md-4">
-                    <a href="#" class="clearfix">
-                        <span class="title">Microsoft Surface Pro 4</span>
+                        <!--
+                        <footer>
+                            <a href="#" class="toggle-link">Show More</a>
+                        </footer>-->
+                    </div> <!-- END WIDGET -->
+                </div> <!-- END WIDGET SECTION -->
 
-                        <img src="images/surface-pro.jpg" alt="" />
 
-                        <strong>75% Off Today</strong><br />
-                        <small>*limited stocks</small>
+                <div class="widget-section">
+                    <header><a href="#">Manufacturer <i class="fa fa-chevron-left"></i></a></header>
 
-                        <span class="link">Shop Now <i class="fa fa-caret-right"></i></span>
-                    </a>
+                    <div class="widget">
+                        <input type="search" class="input-basic" value="Search an option .." />
 
-                    <a href="#" class="clearfix">
-                        <span class="title">Camping Bags</span>
+                        <form class="filter-brand">
+                            <label for="apple" class="label-basic"><input type="checkbox" id="apple" /> Apple (1)</label>
 
-                        <img src="images/camping-bag.jpg" alt="" class="md-size" />
+                            <label for="nokia" class="label-basic"><input type="checkbox" id="nokia" /> Nokia (1)</label>
 
-                        <strong>Extra 10% off</strong><br />
-                        <small>*freebies included</small>
+                            <label for="lenovo" class="label-basic"><input type="checkbox" id="lenovo" /> Lenovo (1)</label>
 
-                        <span class="link">Shop Now <i class="fa fa-caret-right"></i></span>
-                    </a>
+                            <label for="blackberry" class="label-basic"><input type="checkbox" id="blackberry" /> Blackberry (2)</label>
 
-                    <a href="#" class="clearfix">
-                        <span class="title">Fashion Gift Vouchers</span>
+                            <label for="htc" class="label-basic"><input type="checkbox" id="htc" /> HTC (1)</label>
 
-                        <img src="images/gift-vouchers.jpg" alt="" class="md-size" />
+                            <label for="huawei" class="label-basic"><input type="checkbox" id="huawei" /> Huawei (2)</label>
 
-                        <strong>LTAwesome</strong><br />
-                        <small>*use code on checkout</small>
+                            <label for="lg" class="label-basic"><input type="checkbox" id="lg" /> LG (2)</label>
+                        </form>
+                    </div> <!-- END WIDGET -->
+                </div> <!-- END WIDGET SECTION -->
 
-                        <span class="link">Shop Now <i class="fa fa-caret-right"></i></span>
-                    </a>
-                </div> <!-- END BANNER ASIDE -->
-            </div> <!-- END ROW -->
-            </div> <!-- END BANNER WRAP / CONTAINER FLUID -->
 
-            <article class="md-hide">
-                    <div class="product-sale-section">
-                        <h2>Live Auction, Bid Now</h2>
+                <div class="widget-section">
+                    <header><a href="#">Price <i class="fa fa-chevron-left"></i></a></header>
 
+                    <div class="widget">
+                        <div id="range-slider">
+                            <input id="filter-price" type="text" class="span2" value="" data-slider-min="0" data-slider-max="3999" data-slider-step="20" data-slider-value="[0,3999]"/> 
+
+                            <ul class="price-range basic-list">
+                                <li class="range-start">AED 0</li> 
+                                <li class="range-current">AED </li>
+                                <li class="range-end">AED 39999</li>
+                            </ul> <!-- PRICE RANGE -->
+                        </div> <!-- END RANGE SLIDER -->
+                    </div> <!-- END WIDGET -->
+                </div> <!-- END WIDGET SECTION -->
+            </aside> <!-- END PRIMARY SIDEBAR -->
+
+            <main id="primary-content"> 
+                <div class="row product-list">
+                    <div class="col-xs-6 col-sm-3 col-md-3">
                         <figure>
-                            <a href="#"><img src="images/product-cooler.jpg" alt="Cooler" /></a>
-                            <figcaption class="txt-base base-xs-small-buffer"><b>Coolest Cooler</b></figcaption>
+                            <a href="#"><img src="images/product-11.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">Huawei Ascend Mate 7 Gold</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
+
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
                         </figure>
-                        <strong class="h4 txt-medium-dark base-xs-small-buffer">Bid Starts at <span class="txt-alert">AED 10</span></strong>
-                    </div> <!-- END SALE SECTION -->
-                </article>
-
-
-
-                <div class="featured-nav-tabs md-hide">
-                    <h2 class="large light txt-center">Shop By Categories</h2>
-
-                    <ul class="basic-list">
-                        <li>
-                            <a href="#"><i class="fa fa-mobile-phone"></i><br />Mobiles</a>
-                        </li>
-
-                        <li>
-                            <a href="#"><i class="fa fa-laptop"></i><br />Electronics</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-rocket"></i><br />Gadgets</a>
-                        </li>
-                    </ul>
-                    <ul class="basic-list">
-                        <li>
-                            <a href="#"><i class="fa fa-home"></i><br />Home</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-eye"></i><br />Fashion</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-book"></i><br />Books</a>
-                        </li>
-                    </ul>
-                </div> <!-- END CATEGORY TABS -->
-
-            <div class="featured-products">
-                <article class="xs-hide">
-                    <div class="heading">
-                        <h2><span>Mobile &amp; Tablets &raquo; MEGA DEALS</span></h2>
-
-                        <a href="#" class="button basic-button">View All</a>
-                    </div> <!-- END HEADING -->
-
-                    <div class="product-showcase">
-                        <div class="col-left">
-                            <a href="#"><img src="images/home-body-banner-mobtab1.jpg" alt="" class="img-responsive" /></a>
-                        </div> <!-- END COL LEFT -->
-
-                        <div class="col-right">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            To see is to believe<br />
-                                            <strong>HTC 10 BUY 1 GET 1 FREE</strong>
-                                        </span>
-
-                                        <img src="images/product-1.jpg" alt="" />
-
-                                        <span class="primary-link">Buy Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            Gold is bold<br />
-                                            <strong>iPhone 6 + FREE Case</strong>
-                                        </span>
-
-                                        <img src="images/product-2.jpg" alt="" />
-
-                                        <span class="primary-link">Buy Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-                            </ul> 
-
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            2 is better than 1<br />
-                                            <strong>Samsung Galaxy Tab Bundles</strong>
-                                        </span>
-
-                                        <img src="images/product-3.jpg" alt="" />
-
-                                        <span class="primary-link">Shop Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            Projector on the go<br />
-                                            <strong>Lenovo Yoga Tablets</strong>
-                                        </span>
-
-                                        <img src="images/product-4.jpg" alt="" />
-
-                                        <span class="primary-link">Shop Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                </article>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-12.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">BlackBerry Passport</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
 
-
-
-                <article>
-                    <div class="heading">
-                        <h2><span>Recommendations for you, <em>John</em></span></h2>
-
-                        <a href="#" class="button basic-button">View All</a>
-                    </div> <!-- END HEADING -->
-
-
-                    <div id="featured-carousel-wrapper">
-                        <div id="featured-carousel">
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-5.jpg" alt="Motorola Moto X Style 32 GB" /></a>
-                                <em>Extra 20% offer</em>
-                                <a href="#" class="title">Motorola Moto X Style 32GB</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-6.jpg" alt="Microsoft Surface Pro 4 128GB 6GB RAM" /></a>
-                                <em>Amazing Microsoft Offer</em>
-                                <a href="#" class="title">Microsoft Surface Pro 4 128GB 6GB RAM</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-7.jpg" alt="Apple iPad Pro 12.9 WiFi" /></a>
-                                <em>Extra Discount on iPad Pro</em>
-                                <a href="#" class="title">Apple iPad Pro 12.9 WiFi + Cellular</a>
-
-                                <s>AED 3,250</s>
-                                <b>AED 2,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-8.jpg" alt="Samsung Galaxy Tab E 9.6-inch 3G and WiFi White" /></a>
-                                <em>Extra 20% Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab E 9.6-inch 3G and WiFi White</a>
-
-                                <s>AED 2,500</s>
-                                <b>AED 1,250</b>
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-9.jpg" alt="Samsung Galaxy Tab S 10.5 16GB WiFi" /></a>
-                                <em>Amazing Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab S 10.5 16GB WiFi</a>
-
-                                <s>AED 3,248</s>
-                                <b>AED 2,000</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-10.jpg" alt="HTC 10" /></a>
-                                <em>Amazing Deals on HTC</em>
-                                <a href="#" class="title">HTC 10</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-5.jpg" alt="Motorola Moto X Style 32 GB" /></a>
-                                <em>Extra 20% offer</em>
-                                <a href="#" class="title">Motorola Moto X Style 32GB</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-6.jpg" alt="Microsoft Surface Pro 4 128GB 6GB RAM" /></a>
-                                <em>Amazing Microsoft Offer</em>
-                                <a href="#" class="title">Microsoft Surface Pro 4 128GB 6GB RAM</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-7.jpg" alt="Apple iPad Pro 12.9 WiFi" /></a>
-                                <em>Extra Discount on iPad Pro</em>
-                                <a href="#" class="title">Apple iPad Pro 12.9 WiFi + Cellular</a>
-
-                                <s>AED 3,250</s>
-                                <b>AED 2,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-8.jpg" alt="Samsung Galaxy Tab E 9.6-inch 3G and WiFi White" /></a>
-                                <em>Extra 20% Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab E 9.6-inch 3G and WiFi White</a>
-
-                                <s>AED 2,500</s>
-                                <b>AED 1,250</b>
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-9.jpg" alt="Samsung Galaxy Tab S 10.5 16GB WiFi" /></a>
-                                <em>Amazing Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab S 10.5 16GB WiFi</a>
-
-                                <s>AED 3,248</s>
-                                <b>AED 2,000</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-10.jpg" alt="HTC 10" /></a>
-                                <em>Amazing Deals on HTC</em>
-                                <a href="#" class="title">HTC 10</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-                        </div>
-                    </div> <!-- END FEATURED SLIDER -->
-                </article>
-
-
-                <article class="xs-hide">
-                    <div class="heading">
-                        <h2><span>Books &raquo; Award Winners</span></h2>
-
-                        <a href="#" class="button basic-button">View All</a>
-                    </div> <!-- END HEADING -->
-
-                    <div class="product-showcase">
-                        <div class="col-left">
-                            <a href="#"><img src="images/home-body-banner-books1a.jpg" alt="" class="img-responsive" /></a>
-                        </div> <!-- END COL LEFT -->
-
-                        <div class="col-right">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            To see is to believe<br />
-                                            <strong>HTC 10 BUY 1 GET 1 FREE</strong>
-                                        </span>
-
-                                        <img src="images/product-1.jpg" alt="" />
-
-                                        <span class="primary-link">Buy Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            Gold is bold<br />
-                                            <strong>iPhone 6 + FREE Case</strong>
-                                        </span>
-
-                                        <img src="images/product-2.jpg" alt="" />
-
-                                        <span class="primary-link">Buy Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-                            </ul> 
-
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            2 is better than 1<br />
-                                            <strong>Samsung Galaxy Tab Bundles</strong>
-                                        </span>
-
-                                        <img src="images/product-3.jpg" alt="" />
-
-                                        <span class="primary-link">Shop Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            Projector on the go<br />
-                                            <strong>Lenovo Yoga Tablets</strong>
-                                        </span>
-
-                                        <img src="images/product-4.jpg" alt="" />
-
-                                        <span class="primary-link">Shop Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                </article>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-13.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">Samsung Galaxy Note 4</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
 
-
-
-                <article class="xs-hide">
-                    <div class="heading">
-                        <h2><span>Recommendations for you, <em>John</em></span></h2>
-
-                        <a href="#" class="button basic-button">View All</a>
-                    </div> <!-- END HEADING -->
-
-
-                    <div id="primary-carousel-wrapper">
-                        <div id="primary-carousel">
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-5.jpg" alt="Motorola Moto X Style 32 GB" /></a>
-                                <em>Extra 20% offer</em>
-                                <a href="#" class="title">Motorola Moto X Style 32GB</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-6.jpg" alt="Microsoft Surface Pro 4 128GB 6GB RAM" /></a>
-                                <em>Amazing Microsoft Offer</em>
-                                <a href="#" class="title">Microsoft Surface Pro 4 128GB 6GB RAM</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-7.jpg" alt="Apple iPad Pro 12.9 WiFi" /></a>
-                                <em>Extra Discount on iPad Pro</em>
-                                <a href="#" class="title">Apple iPad Pro 12.9 WiFi + Cellular</a>
-
-                                <s>AED 3,250</s>
-                                <b>AED 2,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-8.jpg" alt="Samsung Galaxy Tab E 9.6-inch 3G and WiFi White" /></a>
-                                <em>Extra 20% Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab E 9.6-inch 3G and WiFi White</a>
-
-                                <s>AED 2,500</s>
-                                <b>AED 1,250</b>
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-9.jpg" alt="Samsung Galaxy Tab S 10.5 16GB WiFi" /></a>
-                                <em>Amazing Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab S 10.5 16GB WiFi</a>
-
-                                <s>AED 3,248</s>
-                                <b>AED 2,000</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-10.jpg" alt="HTC 10" /></a>
-                                <em>Amazing Deals on HTC</em>
-                                <a href="#" class="title">HTC 10</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-5.jpg" alt="Motorola Moto X Style 32 GB" /></a>
-                                <em>Extra 20% offer</em>
-                                <a href="#" class="title">Motorola Moto X Style 32GB</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-6.jpg" alt="Microsoft Surface Pro 4 128GB 6GB RAM" /></a>
-                                <em>Amazing Microsoft Offer</em>
-                                <a href="#" class="title">Microsoft Surface Pro 4 128GB 6GB RAM</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-7.jpg" alt="Apple iPad Pro 12.9 WiFi" /></a>
-                                <em>Extra Discount on iPad Pro</em>
-                                <a href="#" class="title">Apple iPad Pro 12.9 WiFi + Cellular</a>
-
-                                <s>AED 3,250</s>
-                                <b>AED 2,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-8.jpg" alt="Samsung Galaxy Tab E 9.6-inch 3G and WiFi White" /></a>
-                                <em>Extra 20% Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab E 9.6-inch 3G and WiFi White</a>
-
-                                <s>AED 2,500</s>
-                                <b>AED 1,250</b>
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-9.jpg" alt="Samsung Galaxy Tab S 10.5 16GB WiFi" /></a>
-                                <em>Amazing Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab S 10.5 16GB WiFi</a>
-
-                                <s>AED 3,248</s>
-                                <b>AED 2,000</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-10.jpg" alt="HTC 10" /></a>
-                                <em>Amazing Deals on HTC</em>
-                                <a href="#" class="title">HTC 10</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-                        </div>
-                    </div> <!-- END FEATURED SLIDER -->
-                </article>
-
-
-                <article class="xs-hide">
-                    <div class="heading">
-                        <h2><span>Electronics &raquo; Up To 70% Off</span></h2>
-
-                        <a href="#" class="button basic-button">View All</a>
-                    </div> <!-- END HEADING -->
-
-                    <div class="product-showcase">
-                        <div class="col-left">
-                            <a href="#"><img src="images/home-body-banner-electronics1.gif" alt="" class="img-responsive" /></a>
-                        </div> <!-- END COL LEFT -->
-
-                        <div class="col-right">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            To see is to believe<br />
-                                            <strong>HTC 10 BUY 1 GET 1 FREE</strong>
-                                        </span>
-
-                                        <img src="images/product-1.jpg" alt="" />
-
-                                        <span class="primary-link">Buy Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            Gold is bold<br />
-                                            <strong>iPhone 6 + FREE Case</strong>
-                                        </span>
-
-                                        <img src="images/product-2.jpg" alt="" />
-
-                                        <span class="primary-link">Buy Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-                            </ul> 
-
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            2 is better than 1<br />
-                                            <strong>Samsung Galaxy Tab Bundles</strong>
-                                        </span>
-
-                                        <img src="images/product-3.jpg" alt="" />
-
-                                        <span class="primary-link">Shop Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <span class="title">
-                                            Projector on the go<br />
-                                            <strong>Lenovo Yoga Tablets</strong>
-                                        </span>
-
-                                        <img src="images/product-4.jpg" alt="" />
-
-                                        <span class="primary-link">Shop Now <i class="fa fa-caret-right"></i></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                </article>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-14.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">LG G5</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
 
-
-
-                <article class="xs-hide">
-                    <div class="heading">
-                        <h2><span>Recommendations for you, <em>John</em></span></h2>
-
-                        <a href="#" class="button basic-button">View All</a>
-                    </div> <!-- END HEADING -->
-
-
-                    <div id="secondary-carousel-wrapper">
-                        <div id="secondary-carousel">
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-5.jpg" alt="Motorola Moto X Style 32 GB" /></a>
-                                <em>Extra 20% offer</em>
-                                <a href="#" class="title">Motorola Moto X Style 32GB</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-6.jpg" alt="Microsoft Surface Pro 4 128GB 6GB RAM" /></a>
-                                <em>Amazing Microsoft Offer</em>
-                                <a href="#" class="title">Microsoft Surface Pro 4 128GB 6GB RAM</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-7.jpg" alt="Apple iPad Pro 12.9 WiFi" /></a>
-                                <em>Extra Discount on iPad Pro</em>
-                                <a href="#" class="title">Apple iPad Pro 12.9 WiFi + Cellular</a>
-
-                                <s>AED 3,250</s>
-                                <b>AED 2,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-8.jpg" alt="Samsung Galaxy Tab E 9.6-inch 3G and WiFi White" /></a>
-                                <em>Extra 20% Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab E 9.6-inch 3G and WiFi White</a>
-
-                                <s>AED 2,500</s>
-                                <b>AED 1,250</b>
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-9.jpg" alt="Samsung Galaxy Tab S 10.5 16GB WiFi" /></a>
-                                <em>Amazing Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab S 10.5 16GB WiFi</a>
-
-                                <s>AED 3,248</s>
-                                <b>AED 2,000</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-10.jpg" alt="HTC 10" /></a>
-                                <em>Amazing Deals on HTC</em>
-                                <a href="#" class="title">HTC 10</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-5.jpg" alt="Motorola Moto X Style 32 GB" /></a>
-                                <em>Extra 20% offer</em>
-                                <a href="#" class="title">Motorola Moto X Style 32GB</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-6.jpg" alt="Microsoft Surface Pro 4 128GB 6GB RAM" /></a>
-                                <em>Amazing Microsoft Offer</em>
-                                <a href="#" class="title">Microsoft Surface Pro 4 128GB 6GB RAM</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-7.jpg" alt="Apple iPad Pro 12.9 WiFi" /></a>
-                                <em>Extra Discount on iPad Pro</em>
-                                <a href="#" class="title">Apple iPad Pro 12.9 WiFi + Cellular</a>
-
-                                <s>AED 3,250</s>
-                                <b>AED 2,500</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-8.jpg" alt="Samsung Galaxy Tab E 9.6-inch 3G and WiFi White" /></a>
-                                <em>Extra 20% Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab E 9.6-inch 3G and WiFi White</a>
-
-                                <s>AED 2,500</s>
-                                <b>AED 1,250</b>
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-9.jpg" alt="Samsung Galaxy Tab S 10.5 16GB WiFi" /></a>
-                                <em>Amazing Offer</em>
-                                <a href="#" class="title">Samsung Galaxy Tab S 10.5 16GB WiFi</a>
-
-                                <s>AED 3,248</s>
-                                <b>AED 2,000</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-
-                            <div>
-                                <a href="#" class="figure"><img src="images/product-10.jpg" alt="HTC 10" /></a>
-                                <em>Amazing Deals on HTC</em>
-                                <a href="#" class="title">HTC 10</a>
-
-                                <s>AED 4,350</s>
-                                <b>AED 3,999</b>
-
-                                <span class="tag">Sale</span>
-                            </div>
-                        </div>
-                    </div> <!-- END FEATURED SLIDER -->
-                </article>
-            </div> <!-- END FEATURED PRODUCTS -->
-
-            <ul class="info-widget base-md-buffer xs-hide">
-                <li>
-                    <i class="fa fa-truck"></i>
-
-                    <div>
-                    <b>FREE SHIPPING ALL OVER THE U.A.E.</b>
-                    <span>On all orders over AED 99.</span>
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                </li>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-15.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">Motorola Moto X Style 32GB</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
 
-                <li>
-                    <i class="fa fa-level-down"></i>                
-
-                    <div>
-                        <b>15 DAY RETURNS</b>
-                        <span>100% money back guarantee.</span>
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                </li>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-16.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">Microsoft Lumia 950 Dual SIM</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
 
-                <li>
-                    <i class="fa fa-comments"></i>
-
-                    <div>
-                        <b>AFTER-SALES SUPPORT</b>
-                        <span>Purchase with complete peace of mind.</span>
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
                     </div>
-                </li>
-            </ul>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-17.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">HTC 10</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
 
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-18.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">BlackBerry Porsche Design</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
+
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-19.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">Sony Xperia Z2 LTE</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
+
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div class="col-xs-6 col-sm-3 col-md-3">
+                        <figure>
+                            <a href="#"><img src="images/product-20.jpg" alt="" class="img-responsive" /></a>
+                            <figcaption>
+                                <h2 class="txt-md"><a href="#">LG G3 Dual-LTE 32GB Black</a></h2>
+                                
+                                <div class="rating-wrapper">
+                                <div class="user-rating">
+                                    <div class="product-rating-view" data-rating="5.0"></div> &nbsp; <em>(254)</em>
+                                </div>
+                                </div>
+                                
+                                
+                                <s class="txt-md">AED 4,350</s>
+
+                                <strong>AED 3,999</strong>
+                                
+                                
+                                <ul class="product-features txt-sm basic-list">
+                                    <li>iOS 9 OS 4.7"</li>
+                                    <li>Retina HD Display</li>
+                                    <li>Camera: 12MP|5MP</li>
+                                    <li>3D Touch &amp; Live Photos</li>
+                                    <li>Bluetooth Support</li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </main> <!-- END PRIMARY CONTENT -->
         </div> <!-- END MAIN -->
-        </main>
     </div> <!-- END CONTENT WRAP -->
+
     
 </div> <!-- END PAGE CONTENT -->
     
@@ -1655,6 +1242,12 @@
     <script src="js/sticky-header.js"></script>
     
     <script src="js/jquery.scrolltop.min.js"></script>
+    
+    <script src="js/readmore.min.js"></script>
+    
+    <script src="js/bootstrap-slider.min.js"></script>
+    
+    <script src="js/jquery.star-rating-svg.min.js"></script>
     
     <script src="js/custom.js"></script>
     
