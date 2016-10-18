@@ -181,5 +181,7 @@ $("#filter-price").slider({});
 
 $('#primary-sidebar .tooltip.tooltip-main.top .tooltip-inner').appendTo('#primary-sidebar .price-range .range-current');
 
+$('img.lazyloaded').lazyload();
+
 /*** END JQUERY UI SCRIPTS ***/
 
