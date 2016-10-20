@@ -19,7 +19,7 @@ $('#header-middle').stickMe();
     Primary Menu toggle feature for tablets and mobile resolutions
 */
     $('.fa-bars').on('click tap', function (e) {
-        $('body').addClass('animate');
+        $('body').toggleClass('animate');
         e.stopPropagation();
     });
     
@@ -46,6 +46,15 @@ $('#header-middle').stickMe();
     $('#header-shopping-cart > a').click(function(e) {
         e.preventDefault();
     });
+
+    $(window).on('scroll', function() {
+        if( $("#header-middle").hasClass('sticking')) { 
+            $('#page-header').find('#header-base').addClass('transform');   
+        } else {
+            $('#page-header').find('#header-base').removeClass('transform');
+        }
+    });
+
     
     
     
@@ -116,7 +125,8 @@ arrows: true,
 
 
 $('#simple-carousel').slick({
-    dots: true
+    dots: true,
+    arrows: false
 });
 
 /*

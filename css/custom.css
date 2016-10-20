@@ -64,7 +64,7 @@
 /*** GLOBAL CLASSES ***/
 /**********************/
 .main {
-    width: 1170px;
+    width: 1280px;
     /* For older browsers which don't support media queries, this will show a fixed width website */
     margin: 0 auto;
     padding: 0 15px;
@@ -1080,6 +1080,10 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     color: #222222;
 }
 
+#primary-menu > ul > li.active > a {
+    color: #00efff;
+}
+
 #primary-menu > ul > li > a > .fa-chevron-down {
     font-size: 0.7em;
     font-weight: normal;
@@ -1955,7 +1959,7 @@ ul.info-widget > li span {
     width: 70%;
     display: inline-block;
     position: relative;
-    z-index: 999;
+    z-index: 99;
     background: #ffffff;
     margin: 0 auto;
     padding: 0 10px;

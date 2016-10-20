@@ -33,7 +33,7 @@
     
     .main {
         width: 100%;
-        max-width: 1170px;
+        max-width: 1280px;
         /* For browsers which support media queries, this will show a responsive website */
     }
 }
@@ -240,6 +240,10 @@
         display: inline-block;
     }
     
+    #header-middle.not-sticking {
+        z-index: 99;
+    }
+    
 /* 
     Header Main 
 */
@@ -290,6 +294,10 @@
     body.animate #header-base {
         transition: 0.4s;
         left: 0;
+    }
+    
+    #header-base.transform {
+        top: 120px;
     }
     
 /* 
