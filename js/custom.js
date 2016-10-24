@@ -1,12 +1,12 @@
 /*** JQUERY UI SCRIPTS ***/
-$(document).ready(function () {
+$(document).ready(function() {
     
 /**********************/
 /*** Website Header ***/
 /**********************/    
-$('#header-middle').stickMe();
+    $('#header-middle').stickMe();
     $.scrolltop();
-});
+
 
 
 
@@ -84,7 +84,7 @@ $('#header-middle').stickMe();
 /*
     Featured Slider
 */
-    $('#featured-carousel, #primary-carousel, #secondary-carousel').slick({
+    $('#featured-carousel, #primary-carousel, #secondary-carousel, #another-carousel').slick({
   dots: false,
   accessibility: true,
 arrows: true,
@@ -136,11 +136,78 @@ $(".product-rating-view").starRating({
     starSize: 15,
     activeColor: 'red',
     readOnly: true,
+    emptyColor: 'white',
     starGradient: {
       start: '#ffbd00',
       end: '#ffbd00'
   }
 });
+    
+
+$(".product-rating-edit").starRating({
+    initialRating: 0,
+    useFullStars: true,
+    emptyColor: 'white',
+    disableAfterRate: false,
+    onHover: function(currentIndex, currentRating, $el){
+        if (currentIndex == 1) {
+            $('.live-rating').text("Not good. Not recommended");   
+        } else if (currentIndex == 2) {
+            $('.live-rating').text("There's something missing");   
+        } else if (currentIndex == 3) {
+            $('.live-rating').text("Average. Ordinary");   
+        } else if (currentIndex == 4) {
+            $('.live-rating').text("Good. Recommended");   
+        } else if (currentIndex == 5) {
+            $('.live-rating').text("Great! Highly recommended");
+        } else {
+            $('.live-rating').text("Click the stars to rate this product");
+        }
+    },
+    onLeave: function(currentIndex, currentRating, $el){
+       if (currentRating == 1) {
+            $('.live-rating').text("Not good. Not recommended");   
+        } else if (currentRating == 2) {
+            $('.live-rating').text("There's something missing");   
+        } else if (currentRating == 3) {
+            $('.live-rating').text("Average. Ordinary");   
+        } else if (currentRating == 4) {
+            $('.live-rating').text("Good. Recommended");   
+        } else if (currentRating == 5) {
+            $('.live-rating').text("Great! Highly recommended");
+        } else {
+            $('.live-rating').text("Click the stars to rate this product");
+        }
+    }
+  });
+    
+    
+/*
+    Tooltip
+*/
+    
+$('.fa-question-circle-o').popover({
+        html: true,
+        trigger: 'manual',
+        container: $(this).attr('id'),
+        placement: 'top',
+        content: function () {
+            $return = '<div class="hover-hovercard"></div>';
+        }
+    }).on("mouseenter", function () {
+        var _this = this;
+        $(this).popover("show");
+        $(this).siblings(".popover").on("mouseleave", function () {
+            $(_this).popover('hide');
+        });
+    }).on("mouseleave", function () {
+        var _this = this;
+        setTimeout(function () {
+            if (!$(".popover:hover").length) {
+                $(_this).popover("hide")
+            }
+        }, 100);
+    });
 
 
 /*  
@@ -189,7 +256,130 @@ $('#primary-sidebar form.filter-brand').readmore({
     moreLink: '<footer><a href="#" class="toggle-link">Show More</a></footer>',
     lessLink: '<footer><a href="#" class="toggle-link">Show Less</a></footer>'
 });
+    
+$('#product-specifications').readmore({
+    speed: 1000,
+    collapsedHeight: 0,
+    moreLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> View Full Specs</a>',
+    lessLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> View Less Specs</a>'
+});
+    
 
+$(document).on( 'shown.bs.tab', 'a[data-toggle=\'tab\']', function (e) {
+$('#review-tabs .guidelines').readmore({
+    speed: 1000,
+    collapsedHeight: 0,
+    moreLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> Show help and guidelines</a>',
+    lessLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> Hide help and guidelines</a>'
+});
+})
+    
+    
+    
+    
+var outerHeight = 0;
+$('#expert-reviews .review-list > .row.visible').each(function() {
+  outerHeight += $(this).outerHeight();
+});
+
+var customHeight = outerHeight
+    
+$('#expert-reviews .review-list').readmore({
+    speed: 1000,
+    collapsedHeight: customHeight,
+    moreLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm txt-center top-xs-buffer"><i class="fa fa-arrow-circle-right"></i> Read More Reviews</a>',
+    lessLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm txt-center top-xs-buffer"><i class="fa fa-arrow-circle-right"></i> Read Less Reviews</a>'
+});
+
+
+
+/*
+    Button Options Group Toggle Function
+*/
+$('.btn-options-group button').on('click', function() {
+    $(this).toggleClass('active'); 
+});
+
+
+
+/* 
+    Input Number Field
+*/
+$('.btn-number').click(function(e){
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+});
+
+
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+});
+    
+    
+
+    
 /*
     Primary Sidebar - Range Slider
 */
@@ -198,6 +388,6 @@ $("#filter-price").slider({});
 $('#primary-sidebar .tooltip.tooltip-main.top .tooltip-inner').appendTo('#primary-sidebar .price-range .range-current');
 
 $('img.lazyloaded').lazyload();
+    
 
-/*** END JQUERY UI SCRIPTS ***/
-
+}); /* End jQuery */

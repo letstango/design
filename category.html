@@ -774,12 +774,16 @@
             </aside> <!-- END PRIMARY SIDEBAR -->
 
             <main id="primary-content"> 
-                <div id="simple-carousel">
-                    <div><img src="images/homeHero-fashionbanner.jpg" alt="" /></div>
-                    <div><img src="images/homeHero-microsoftsurface2.jpg" alt="" /></div>
-                    <div><img src="images/homeHero-NIKONBrandBanner.jpg" alt="" /></div>
-                    <div><img src="images/homeHero-Banner-Blog.jpg" alt="" /></div>
-                </div> <!-- END BASIC CAROUSEL -->
+                <div class="row">
+                    <div class="col-md-12">
+                    <div id="simple-carousel">
+                        <div><img data-original="images/homeHero-fashionbanner.jpg" alt="" class="lazyloaded" /></div>
+                        <div><img data-original="images/homeHero-microsoftsurface2.jpg" alt="" class="lazyloaded" /></div>
+                        <div><img data-original="images/homeHero-NIKONBrandBanner.jpg" alt="" class="lazyloaded" /></div>
+                        <div><img data-original="images/homeHero-Banner-Blog.jpg" alt="" class="lazyloaded" /></div>
+                    </div> <!-- END BASIC CAROUSEL -->
+                    </div>
+                </div> <!-- END ROW -->
                 
                 <div class="row product-list">
                     <article class="col-xs-6 col-sm-3 col-md-3">
@@ -1257,6 +1261,8 @@
     <script src="js/jquery.star-rating-svg.min.js"></script>
     
     <script src="js/jquery.lazyload.min.js"></script>
+    
+    <script src="js/bootstrap-number-input.js"></script>
     
     <script src="js/custom.js"></script>
     
