@@ -1026,7 +1026,7 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
 */
 #header-middle {
     font-size: 10px;
-    z-index: 99999;
+    z-index: 999999;
     left: 0;
     right: 0;
     background: url('../images/bg-header-mid.png');
@@ -1739,87 +1739,52 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 */
 .product-showcase {
     width: 100%;
-    font-size: 1.7em;
-    text-align: center;
-    text-transform: uppercase;
-    display: table;
-    margin: 0 0 30px 0;
-}
-
-.product-showcase > div {
-    width: 50%;
-    height: 100%;
-    display: table-cell;
-    vertical-align: top;
-}
-
-.product-showcase strong {
-    text-transform: none;
-}
-
-.product-showcase .title,
-.product-showcase img,
-.product-showcase .primary-link {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
 }
 
 .product-showcase .col-left {
-    padding: 0;
-    border: 1px #ecebeb solid;
+    width: 52%;
+    position: relative;
 }
 
 .product-showcase .col-right {
-    width: 49.5%;
-    padding-left: 0.2%;
+    width: 48%;
+    vertical-align: top;
+    position: relative;
 }
 
 .product-showcase .col-right > ul {
-    width: 100%;
-    height: 50%;
-    display: table;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    width: 99%;
+    height: 49%;
+    position: absolute;
+    left: 0;
+    display: block;
+    margin: 0 0 0 1%;
+}
+
+.product-showcase .col-right > ul:first-child {
+    top: 0;
+}
+
+.product-showcase .col-right > ul:last-child {
+    bottom: 0;
 }
 
 .product-showcase .col-right > ul > li {
-    width: 50%;
+    width: 48.5%;
     height: 100%;
-    display: table-cell;    
-    vertical-align: middle;
+    display: inline-block;
+    margin-left: 1%;
 }
 
 .product-showcase .col-right > ul > li > a {
-    width: 96%;
+    width: 100%;
     height: 100%;
+    text-align: center;
     overflow: auto;
     position: relative;
     display: block;
     border: 1px #ecebeb solid;
-    margin: 1%;
-    margin-left: 4%;
-    padding: 10px;
-}
-
-
-.product-showcase .col-right > ul:first-child > li > a {
-    margin-top: -1%;
-}
-
-.product-showcase .col-right > ul:last-child > li > a {
-    margin-bottom: -1%;
-}
-
-.product-showcase .col-right img {
-    width: 85%;
-    padding: 0 7.5%;
-}
-
-.product-showcase a {
-    display: block;
-    position: relative;
+    padding: 5% 5px 0 5px;
 }
 
 .product-showcase a:after {
@@ -1840,6 +1805,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
     transition: 0.2s;
 }
 
+.product-showcase .title,
+.product-showcase img,
+.product-showcase .primary-link {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-showcase .title {
+    max-width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.product-showcase .col-right img {
+    width: 70%;
+}
 
 /*
     Featured Carousel
@@ -2566,6 +2549,7 @@ ul.info-widget > li span {
     width: 100%;
     font-size: 12px;
     display: table;
+    margin: 0 0 4px 0;
 }
 
 .review-section .review-summary .rating-bar > div {

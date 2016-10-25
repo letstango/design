@@ -4,8 +4,12 @@ $(document).ready(function() {
 /**********************/
 /*** Website Header ***/
 /**********************/    
-    $('#header-middle').stickMe();
     $.scrolltop();
+    
+    
+    $('#header-middle').stickMe({
+        topOffset: 900
+    });
 
 
 
@@ -54,8 +58,38 @@ $(document).ready(function() {
             $('#page-header').find('#header-base').removeClass('transform');
         }
     });
-
     
+    /*
+    var visible = false;
+    
+    $(window).on('scroll', function() {
+        if( $("#header-middle.primary").hasClass('sticking')) { 
+            $('#header-middle.primary #header-main #header-search-form, #header-middle.primary #header-aside').hide();
+            if(!visible) {
+                   $('body').find('#product-overview .process-button-group').clone().appendTo('#header-middle.primary #header-main');
+                visible = true;
+                }
+        } else {
+            $('#header-middle.primary #header-main #header-search-form, #header-middle.primary #header-aside').show();
+            if(visible)  {
+                    $('#header-middle.primary').find('.process-button-group').remove();
+                    visible = false;
+            } 
+        }
+    });*/
+    
+    $('.trigger-area').on('inview', function(event, isInView) {
+          if (isInView) {
+            $('#header-middle.primary #header-main, #header-middle.primary #header-aside').hide();
+                   
+                           $('body').find('#product-overview .process-button-group').clone().appendTo('#header-middle.primary .main');
+              $('#header-middle.primary .process-button-group').css({'float':'right', 'width':'50%'});
+          } else {
+             $('#header-middle.primary #header-main, #header-middle #header-aside').show();
+              $('#header-middle.primary').find('.process-button-group').remove();
+              $('#header-middle.primary').css({'position':'relative'});
+          }
+});
     
     
     
@@ -128,7 +162,6 @@ $('#simple-carousel').slick({
     dots: true,
     arrows: false
 });
-
 /*
     Product Rating
 */
@@ -136,7 +169,7 @@ $(".product-rating-view").starRating({
     starSize: 15,
     activeColor: 'red',
     readOnly: true,
-    emptyColor: 'white',
+    emptyColor: '#ffffff',
     starGradient: {
       start: '#ffbd00',
       end: '#ffbd00'
@@ -264,7 +297,6 @@ $('#product-specifications').readmore({
     lessLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> View Less Specs</a>'
 });
     
-
 $(document).on( 'shown.bs.tab', 'a[data-toggle=\'tab\']', function (e) {
 $('#review-tabs .guidelines').readmore({
     speed: 1000,
@@ -272,7 +304,7 @@ $('#review-tabs .guidelines').readmore({
     moreLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> Show help and guidelines</a>',
     lessLink: '<a href="#" id="product-details-link" class="primary-link basic-link txt-sm base-xs-buffer"><i class="fa fa-arrow-circle-right"></i> Hide help and guidelines</a>'
 });
-})
+});
     
     
     

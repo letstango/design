@@ -440,6 +440,11 @@
     #header-shopping-cart .cart-dropdown:before {
         right: 20px;
     }
+    
+    #header-middle .process-button-group {
+        width: 100%!important;
+        float: none!important;
+    }
 }
 /**************************/
 /*** END WEBSITE HEADER ***/
