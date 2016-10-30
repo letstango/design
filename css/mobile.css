@@ -498,6 +498,17 @@
     }
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    
+/*
+    Product Gallery  
+*/
+    .product-gallery {
+        width: 76%;
+    }
+    
+
+}
 
 
 
@@ -616,6 +627,56 @@
     #product-overview .process-section .col-md-8 {
         width: 85%;
     }
+    
+/*
+    Product Gallery
+*/
+    .product-gallery {
+        width: 100%;
+        float: none;
+    }
+    
+    .product-gallery-nav {
+        width: 100%;
+        float: none;
+        z-index: 999;
+        padding-top: 12px;
+    }
+    
+    
+.product-gallery-nav .slick-next,
+.product-gallery-nav .slick-prev {
+    width: 22px;
+    height: 77%;
+    position: absolute;
+    bottom: -30%;
+    top: auto;
+    left: auto;
+    right: 0;
+    z-index: 999;
+    border-radius: 0 3px 3px 0;
+}
+
+.product-gallery-nav .slick-prev {
+    top: auto;
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.product-gallery-nav .slick-next:before,
+.product-gallery-nav .slick-prev:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    color: #f57d31;
+    opacity: 1!important;
+    visibility: visible!important;
+    display: inline-block;
+}
+
+.product-gallery-nav .slick-prev:before {
+    content: "\f104";
+}
     
 /*
     Primary Sidebar
@@ -773,7 +834,7 @@
 /*
     Product Overview
 */
-    #product-overview .product-gallery,
+    #product-overview .product-gallery-wrap,
     #product-overview .product-summary {
         width: 100%!important;
     }

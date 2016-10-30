@@ -20,7 +20,6 @@
     
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shanti" rel="stylesheet">
     
-    
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
@@ -32,6 +31,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css" />
     
     <link rel="stylesheet" type="text/css" href="css/star-rating-svg.css" />
+    
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
     
     <link rel="stylesheet" type="text/css" href="css/custom.css" />
     
@@ -677,6 +678,7 @@
 
     
     
+    
 <div id="page-content">
     
     <div id="page-top-bar">
@@ -696,9 +698,56 @@
                 <article id="product-overview">
                     <form>
                     <div class="row">
-                        <div class="product-gallery col-xs-12 col-sm-5 col-md-5">
-                            <img src="images/iPhone-6s-pic-1.jpg" alt="iPhone 6s" />
-                        </div> <!-- END PRODUCT GALLERY -->
+                        <div class="product-gallery-wrap col-xs-12 col-sm-5 col-md-5">
+                           <div class="product-gallery">
+                               <div>
+                                    <img src="images/iPhone-6s-pic-1-medium.jpg" class="img-zoom" alt="" data-zoom-image="images/iPhone-6s-pic-1.jpg" />
+                                   <a href="images/iPhone-6s-pic-1.jpg" data-lightbox="photo-set" class="img-lightbox"><i class="fa fa-search-plus"></i> Zoom</a>
+                               </div>
+                               
+                               <div>
+                                   <img src="images/iPhone-6s-pic-2-medium.jpg" class="img-zoom" alt="" data-zoom-image="images/iPhone-6s-pic-2.jpg" />
+                                   <a href="images/iPhone-6s-pic-2.jpg" data-lightbox="photo-set" class="img-lightbox"><i class="fa fa-search-plus"></i> Zoom</a>
+                               </div>
+                               
+                               <div>
+                                   <img src="images/iPhone-6s-pic-3-medium.jpg" class="img-zoom" alt="" data-zoom-image="images/iPhone-6s-pic-3.jpg" />
+                                   <a href="images/iPhone-6s-pic-3.jpg" data-lightbox="photo-set" class="img-lightbox"><i class="fa fa-search-plus"></i> Zoom</a>
+                               </div>
+                               
+                               <div>
+                                   <img src="images/iPhone-6s-pic-4-medium.jpg" class="img-zoom" alt="" data-zoom-image="images/iPhone-6s-pic-4.jpg" />
+                                   <a href="images/iPhone-6s-pic-4.jpg" data-lightbox="photo-set" class="img-lightbox"><i class="fa fa-search-plus"></i> Zoom</a>
+                               </div>
+                               
+                               <div>
+                                   <img src="images/iPhone-6s-pic-5-medium.jpg" class="img-zoom" alt="" data-zoom-image="images/iPhone-6s-pic-5.jpg" />
+                                   <a href="images/iPhone-6s-pic-5.jpg" data-lightbox="photo-set" class="img-lightbox"><i class="fa fa-search-plus"></i> Zoom</a>
+                               </div>
+                            </div> <!-- END PRODUCT GALLERY -->
+                            
+                            <div class="product-gallery-nav">
+                                <div>
+                                    <img src="images/iPhone-6s-pic-1-medium.jpg" alt="" />
+                               </div>
+                               
+                               <div>
+                                    <img src="images/iPhone-6s-pic-2-medium.jpg" alt="" />
+                               </div>
+                               
+                               <div>
+                                    <img src="images/iPhone-6s-pic-3-medium.jpg" alt="" />
+                               </div>
+                                
+                                <div>
+                                    <img src="images/iPhone-6s-pic-4-medium.jpg" alt="" />
+                               </div>
+                                
+                                <div>
+                                    <img src="images/iPhone-6s-pic-5-medium.jpg" alt="" />
+                               </div>
+                            </div> <!-- END PRODUCT GALLERY NAV -->
+                        </div> <!-- END PRODUCT GALLERY WRAP -->
                         
                         <div class="product-summary col-xs-12 col-sm-7 col-md-7">
                             
@@ -893,6 +942,8 @@
                     </form>
                 </article> <!-- END PRODUCT OVERVIEW -->
                 
+ 
+                
                 <div class="featured-products">
                     <aside>
                     <div class="heading">
@@ -1038,6 +1089,15 @@
                 </aside>
                 </div> <!-- END FEATURED PRODUCTS -->
                 
+                
+                
+               <!--
+                 <div class="zoom-app" style="position: relative;">
+            <div class="wrap">
+                <img src="images/iPhone-6s-pic-1-half.jpg" data-pimg="images/iPhone-6s-pic-1.jpg" class="ip-source-image"/>
+    
+            </div>
+                </div> -->
                 <article class="trigger-area">
                     <h2 class="light txt-caps">Key Features &amp; Detailed Specifications</h2>
                     <div class="table-responsive">
@@ -2609,8 +2669,7 @@ Please don't write about the retailer, shopping experience or delivery.
     
     
 
-    
-<span class="body-overlay"></span>
+<span class="body-overlay"></span>    
     
 <!-- JAVASCRIPT -->
     
@@ -2635,6 +2694,10 @@ Please don't write about the retailer, shopping experience or delivery.
     <script src="js/jquery.lazyload.min.js"></script>
     
     <script src="js/jquery.inview.min.js"></script>
+    
+    <script src="js/lightbox.js"></script>
+    
+    <script src="js/jquery.elevatezoom.js"></script>
     
     <script src="js/custom.js"></script>
     

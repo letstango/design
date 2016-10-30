@@ -91,7 +91,47 @@ $(document).ready(function() {
           }
 });
     
+
     
+/*
+    Product Overview Slider
+*/
+$('.product-gallery').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.product-gallery-nav'
+});
+    
+$('.product-gallery-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.product-gallery',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  vertical: true,
+  draggable: true,
+    responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    
+    
+    
+$('.product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'});
+
     
 /*
     Banner Tabs Slider
@@ -101,7 +141,7 @@ $(document).ready(function() {
       slidesToScroll: 1,
         prevArrow: false,
       arrows: false,
-      fade: false,
+      fade: true,
         autoplay: true,
       asNavFor: '#banner-nav'
     });
