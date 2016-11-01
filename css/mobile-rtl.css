@@ -1,0 +1,346 @@
+/* Main Stylesheet */
+
+/******************/
+/*** TYPOGRAPHY ***/
+/******************/
+
+/**********************/
+/*** END TYPOGRAPHY ***/
+/**********************/
+
+
+
+
+
+/*********************/
+/*** WEBSITE ICONS ***/
+/*********************/
+
+/*************************/
+/*** END WEBSITE ICONS ***/
+/*************************/
+
+
+
+
+
+
+
+/**********************/
+/*** GLOBAL CLASSES ***/
+/**********************/
+@media only screen {
+    
+    
+}
+
+@media only screen and (max-width: 991px) {
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    
+    
+}
+/**************************/
+/*** END GLOBAL CLASSES ***/
+/**************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************/
+/*** BASIC ELEMENTS ***/
+/**********************/
+@media only screen {
+    
+}
+
+@media only screen and (max-width: 991px) {
+    html[dir="rtl"] body {
+        padding-right: 0;    
+    }
+    
+    html[dir="rtl"] body.animate {
+        padding-right: 248px;
+    }
+    
+    html[dir="rtl"] body.animate .body-overlay {
+        left: 0;
+        right: 238px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 767px) {
+    
+}
+/**************************/
+/*** END BASIC ELEMENTS ***/
+/**************************/
+
+
+
+
+
+
+
+
+/******************/
+/*** H ELEMENTS ***/
+/******************/
+@media only screen and (max-width: 991px) {
+    
+}
+/**********************/
+/*** END H ELEMENTS ***/
+/**********************/
+
+
+
+
+
+
+
+
+/*********************/
+/*** FORM ELEMENTS ***/
+/*********************/
+
+/*************************/
+/*** END FORM ELEMENTS ***/
+/*************************/
+
+
+
+
+
+
+
+
+/***********************/
+/*** BUTTONS & LINKS ***/
+/***********************/
+
+/***************************/
+/*** END BUTTONS & LINKS ***/
+/***************************/
+
+
+
+
+
+
+
+/**********************/
+/*** WEBSITE HEADER ***/
+/**********************/
+@media only screen and (min-width: 992px) {
+   
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+ 
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1120px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width: 991px) {
+
+/*
+    Header Base
+*/
+    html[dir="rtl"] #header-base {
+        right: -248px!important;
+    }
+    
+    html[dir="rtl"] body.animate #header-base {
+        right: 0!important;
+    }
+    
+    html[dir="rtl"] #primary-menu > ul > li > a {
+        text-align: right;
+        padding-left: 20px;
+        padding-right: 0;
+    }
+    
+    html[dir="rtl"] #primary-menu ul.nav-subcategory > li,
+    html[dir="rtl"] #primary-menu ul.nav-items > li {
+        padding-right: 15px;
+    }
+    
+    html[dir="rtl"] #primary-menu ul.nav-subcategory > li > .fa {
+        float: left;
+    }
+    
+    html[dir="rtl"] #primary-menu ul.nav-subcategory > li > a, 
+    html[dir="rtl"] #primary-menu ul.nav-items > li > a {
+        text-align: right;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    html[dir="rtl"] #primary-menu .dropdown-wrapper {
+        width: 100%;
+    }
+    
+    html[dir="rtl"] #primary-menu ul.nav-subcategory {
+        padding: 0 10px 0 0;
+    }
+    
+    html[dir="rtl"] #primary-menu .fa-angle-right {
+        margin: 1px 0 0 5px;    
+    }
+    
+    html[dir="rtl"] #primary-menu .fa-angle-right:before {
+        content: "\f104";
+    }
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+}
+/**************************/
+/*** END WEBSITE HEADER ***/
+/**************************/
+
+
+
+
+/************************/
+/*** WEBSITE CONTENTS ***/
+/************************/
+@media only screen and (max-width: 1320px) {
+
+}
+
+
+@media only screen and (max-width: 1280px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+    
+
+}
+
+
+
+
+@media only screen and (min-width: 1080px) and (max-width: 1200px) {
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+/*
+    Header Middle
+*/
+
+/*
+    Brand Logo   
+*/
+    html[dir="rtl"] #brand-logo {
+        margin-top: -10px;
+    }
+    
+    html[dir="rtl"] #header-shopping-cart {
+        margin-top: -4px;
+    }
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+}
+/****************************/
+/*** END WEBSITE CONTENTS ***/
+/****************************/
+
+
+
+
+
+
+
+
+/**********************/
+/*** WEBSITE FOOTER ***/
+/**********************/
+@media only screen and (min-width: 768px) and (max-width: 1120px) {
+
+}
+
+@media only screen and (max-width: 991px) {
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+}
+/**************************/
+/*** END WEBSITE FOOTER ***/
+/**************************/
+
+
+
+
+
+

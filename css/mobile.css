@@ -933,21 +933,15 @@
 /*
     Featured Carousel
 */
-    #featured-carousel-wrapper, 
-    #primary-carousel-wrapper, 
-    #secondary-carousel-wrapper {
+    .featured-carousel-wrapper {
         padding: 0 20px;
     }
     
-    #featured-carousel .slick-next,
-    #primary-carousel .slick-next,
-    #secondary-carousel .slick-next {
+    .featured-carousel .slick-next {
         right: -25px;
     }
     
-    #featured-carousel .slick-prev,
-    #primary-carousel .slick-prev,
-    #secondary-carousel .slick-prev {
+    .featured-carousel .slick-prev {
         left: -25px;
     }
     
@@ -1004,6 +998,13 @@
 /**********************/
 @media only screen and (min-width: 768px) and (max-width: 1120px) {
 /*
+    Footer Top  
+*/
+    #signup-form .field-wrap {
+        width: 54%;
+        margin: 0 0 0 7%;
+    }
+/*
     Footer Base
 */
     
@@ -1034,17 +1035,16 @@
     #footer-top {
         font-size: 9px;
     }
+        
+    #signup-form .field-wrap {
+        width: 50%;
+    }
     
 /*
     SignUp Form
 */
     #signup-form label {
         margin-top: 2px;    
-    }
-    
-    #signup-form .field-wrap {
-        width: 37%;
-        margin: 0 6%;
     }
     
     #signup-form .field-wrap input[type="email"] {
@@ -1075,6 +1075,11 @@
 /*
     SignUp Form
 */
+    #signup-form {
+        width: 100%;
+        float: none;
+    }
+    
     #signup-form label {
         display: block;
         float: none;
@@ -1086,6 +1091,14 @@
         display: block;
         float: none;
         margin: 15px auto;
+    }
+    
+/*
+    Contact Column  
+*/
+    #contact-column {
+        width: 100%;
+        float: none;
     }
     
 /*

@@ -1186,7 +1186,7 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     transition: 0.5s;
     top: 44px;
     right: -8px;
-    z-index: 9999;
+    z-index: 999999;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     background: #f57d31;
     border-radius: 8px;
@@ -1739,11 +1739,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 */
 .product-showcase {
     width: 100%;
+    font-size: 1.7em;
 }
 
 .product-showcase .col-left {
     width: 52%;
     position: relative;
+    border: 1px #ecebeb solid;
 }
 
 .product-showcase .col-right {
@@ -1827,46 +1829,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 /*
     Featured Carousel
 */
-#featured-carousel-wrapper,
-#primary-carousel-wrapper,
-#secondary-carousel-wrapper {
+.featured-carousel-wrapper {
     padding: 0 50px;
 }
 
-#featured-carousel .slick-slide,
-#primary-carousel .slick-slide, 
-#secondary-carousel .slick-slide {
+.featured-carousel .slick-slide {
     text-align: center;
     position: relative;
 }
 
-#featured-carousel a.figure,
-#primary-carousel a.figure, 
-#secondary-carousel a.figure {
+.featured-carousel a.figure {
     width: 100%;
     text-align: center;
     display: block;
     margin: 0 0 3em 0;
 }
 
-#featured-carousel a.figure img,
-#primary-carousel a.figure img,
-#secondary-carousel a.figure img {
+.featured-carousel a.figure img {
     margin: 0 auto;
 }
 
-#featured-carousel em,
-#primary-carousel em, 
-#secondary-carousel em {
+.featured-carousel em {
     font-size: 13px;
     font-style: normal;
     color: #f57d31;
     display: block;
 }
 
-#featured-carousel .title,
-#primary-carousel .title,
-#secondary-carousel .title {
+.featured-carousel .title {
     width: 90%;
     font-size: 14px;
     color: #777777;
@@ -1877,31 +1867,23 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
     margin: 0 0 1em 0;
 }
 
-#featured-carousel .title:hover,
-#primary-carousel .title:hover, 
-#secondary-carousel .title:hover {
+.featured-carousel .title:hover {
     color: #f57d31;
 }
 
-#featured-carousel strike,
-#primary-carousel strike, 
-#secondary-carousel strike {
+.featured-carousel strike {
     font-size: 1.4em;
     color: #999999;
     display: block;
 }
 
-#featured-carousel b,
-#primary-carousel b,
-#secondary-carousel b {
+.featured-carousel b {
     font-size: 2em;
     color: #444444;
     display: block;
 }
 
-#featured-carousel .tag,
-#primary-carousel .tag, 
-#secondary-carousel .tag {
+.featured-carousel .tag {
     font-size: 12px;
     font-weight: bold;
     color: #ffffff;
@@ -1916,12 +1898,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 }
 
 .product-image-banner .slick-prev:before,
-#featured-carousel .slick-prev:before,
-#featured-carousel .slick-next:before,
-#primary-carousel .slick-prev:before,
-#primary-carousel .slick-next:before,
-#secondary-carousel .slick-prev:before,
-#secondary-carousel .slick-next:before {
+.featured-carousel .slick-prev:before,
+.featured-carousel .slick-next:before {
     content: "\f053";
     font-family: 'FontAwesome';
     font-size: 20px;
@@ -1929,36 +1907,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 }
 
 .product-image-banner .slick-prev,
-#featured-carousel .slick-prev,
-#primary-carousel .slick-prev, 
-#secondary-carousel .slick-prev {
+.featured-carousel .slick-prev {
     top: 40%;
     left: -50px;
+    right: auto;
 }
 
 .product-image-banner .slick-next,
-#featured-carousel .slick-next,
-#primary-carousel .slick-next, 
-#secondary-carousel .slick-next {
+.featured-carousel .slick-next {
     top: 40%;
     right: -50px;
 }
 
 .product-image-banner .slick-next:before,
-#featured-carousel .slick-next:before,
-#primary-carousel .slick-next:before, 
-#secondary-carousel .slick-next:before {
+.featured-carousel .slick-next:before {
     content: "\f054";
 }
 
 .product-image-banner .slick-prev:hover:before,
 .product-image-banner .slick-next:hover:before,
-#featured-carousel .slick-prev:hover:before, 
-#featured-carousel .slick-next:hover:before,
-#primary-carousel .slick-prev:hover:before, 
-#primary-carousel .slick-next:hover:before, 
-#secondary-carousel .slick-prev:hover:before, 
-#secondary-carousel .slick-next:hover:before {
+.featured-carousel .slick-prev:hover:before, 
+.featured-carousel .slick-next:hover:before {
     color: #f57d31;
 }
 
@@ -3178,6 +3147,11 @@ ul.info-widget > li span {
 /*
     SignUp Form
 */
+#signup-form {
+    width: 74%;
+    float: left;
+}
+
 #signup-form label {
     font-size: 2.5em;
     font-weight: normal;
@@ -3194,12 +3168,12 @@ ul.info-widget > li span {
 }
 
 #signup-form .field-wrap {
-    width: 42%;
+    width: 54%;
     overflow: hidden;
     display: table;
     float: left;
     border-radius: 8px;
-    margin: 0 7%;
+    margin: 0 0 0 12%;
 }
 
 #signup-form .field-wrap .input-column {
@@ -3239,8 +3213,10 @@ ul.info-widget > li span {
     Contact Column
 */
 #contact-column {
+    width: 26%;
     font-size: 1.7em;
     color: #747474;
+    float: right;
 }
 
 #contact-column a {
@@ -3403,6 +3379,7 @@ ul.ft-links li a:hover {
 */
 .scrolltop {
     z-index: 9999;
+    right: 10px;
     bottom: 0;
     border-radius: 5px 5px 0 0;
 }

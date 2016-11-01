@@ -96,7 +96,7 @@ $(document).ready(function() {
 /*
     Product Overview Slider
 */
-$('.product-gallery').slick({
+$('html[dir="ltr"] .product-gallery').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
@@ -104,7 +104,40 @@ $('.product-gallery').slick({
   asNavFor: '.product-gallery-nav'
 });
     
-$('.product-gallery-nav').slick({
+$('html[dir="ltr"] .product-gallery-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.product-gallery',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  vertical: true,
+  draggable: true,
+    responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+    
+$('html[dir="rtl"] .product-gallery').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.product-gallery-nav',
+  rtl: true
+});
+    
+$('html[dir="rtl"] .product-gallery-nav').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
   asNavFor: '.product-gallery',
@@ -136,7 +169,8 @@ $('.product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveCla
 /*
     Banner Tabs Slider
 */
-    $('#banner-carousel').slick({
+    
+    $('html[dir="ltr"] #banner-carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
         prevArrow: false,
@@ -146,7 +180,7 @@ $('.product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveCla
       asNavFor: '#banner-nav'
     });
     
-    $('#banner-nav').slick({
+    $('html[dir="ltr"] #banner-nav').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: '#banner-carousel',
@@ -155,10 +189,31 @@ $('.product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveCla
     });
     
     
+    $('html[dir="rtl"] #banner-carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+        prevArrow: false,
+      arrows: false,
+      fade: true,
+        autoplay: true,
+      asNavFor: '#banner-nav',
+        rtl: true
+    });
+    
+    $('html[dir="rtl"] #banner-nav').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: '#banner-carousel',
+      centerMode: false,
+      focusOnSelect: true,
+        rtl: true
+    });
+    
+    
 /*
     Featured Slider
 */
-    $('#featured-carousel, #primary-carousel, #secondary-carousel, #another-carousel').slick({
+    $('html[dir="ltr"] .featured-carousel').slick({
   dots: false,
   accessibility: true,
 arrows: true,
@@ -196,11 +251,60 @@ arrows: true,
   ]
 });
 
+    
+    /*
+    Featured Slider
+*/
+    $('html[dir="rtl"] .featured-carousel').slick({
+  dots: false,
+  accessibility: true,
+arrows: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+    rtl: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
 
 
-$('#simple-carousel').slick({
+
+$('html[dir="ltr"] #simple-carousel').slick({
     dots: true,
     arrows: false
+});
+    
+$('html[dir="rtl"] #simple-carousel').slick({
+    dots: true,
+    arrows: false,
+    rtl: true
 });
 /*
     Product Rating
@@ -455,7 +559,9 @@ $(".input-number").keydown(function (e) {
 /*
     Primary Sidebar - Range Slider
 */
-$("#filter-price").slider({});
+$('html[dir="rtl"] #filter-price').slider({
+    reversed: true
+});
 
 $('#primary-sidebar .tooltip.tooltip-main.top .tooltip-inner').appendTo('#primary-sidebar .price-range .range-current');
 
