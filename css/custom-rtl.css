@@ -56,6 +56,16 @@ html[dir="rtl"] blockquote {
     padding: 0 20px 0 0;
 }
 
+html[dir="rtl"] .form-group .input-group .form-control {
+    border-left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+html[dir="rtl"] .form-group .input-group .input-group-addon {
+    border-left: 1px #cccccc solid;
+    border-radius: 5px 0 0 5px;
+}
+
 /*************************/
 /*** END FORM ELEMENTS ***/
 /*************************/
@@ -70,7 +80,9 @@ html[dir="rtl"] blockquote {
 /***********************/
 /*** BUTTONS & LINKS ***/
 /***********************/
-
+html[dir="rtl"] .btn-group.btn-default .btn {
+    float: right;
+}
 /***************************/
 /*** END BUTTONS & LINKS ***/
 /***************************/
@@ -142,7 +154,9 @@ html[dir="rtl"] #header-middle .fa-bars {
     margin: 0 0 0 30px;
 }
 
-
+html[dir="rtl"] #header-middle .process-button-group {
+    padding-right: 30px!important;    
+}
 
 
 /*

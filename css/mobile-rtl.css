@@ -222,6 +222,26 @@
         content: "\f104";
     }
     
+/*
+    Header Middle
+*/
+
+/*
+    Brand Logo   
+*/
+    html[dir="rtl"] #brand-logo {
+        margin-top: -10px;
+    }
+    
+    html[dir="rtl"] #header-shopping-cart {
+        margin-top: -4px;
+    }
+    
+    html[dir="rtl"] #header-middle .process-button-group {
+        font-size: 9px;
+        margin: -7px 0 0 0;
+    }
+    
 }
 
 
@@ -231,7 +251,17 @@
 
 
 @media only screen and (max-width: 767px) {
-
+/*
+    Header Middle  
+*/
+    html[dir="rtl"] #header-middle .process-button-group {
+        width: 100%;
+        font-size: 8px;
+        float: none!important;
+        clear: both;
+        padding-right: 30px!important;    
+        margin: 0;
+    }
 }
 /**************************/
 /*** END WEBSITE HEADER ***/
@@ -279,20 +309,6 @@
 
 @media only screen and (max-width: 991px) {
 
-/*
-    Header Middle
-*/
-
-/*
-    Brand Logo   
-*/
-    html[dir="rtl"] #brand-logo {
-        margin-top: -10px;
-    }
-    
-    html[dir="rtl"] #header-shopping-cart {
-        margin-top: -4px;
-    }
     
 }
 
@@ -303,7 +319,28 @@
 
 @media only screen and (max-width: 767px) {
 
-
+/*
+    Product Overview
+*/
+    html[dir="rtl"] #product-overview .product-summary .row.split > div:first-child {
+        border: 0;
+    }
+    
+    html[dir="rtl"] #product-overview .product-logo {
+        margin-right: 0;
+    }
+    
+/*
+    Review Tabs
+*/
+    html[dir="rtl"] #review-tabs ul.nav-tabs > li {
+        float: none;
+    }
+    
+    html[dir="rtl"] #review-tabs ul.nav-tabs > li > a .fa-arrow-circle-right {
+        right: auto;
+        left: 10px;
+    }
 }
 /****************************/
 /*** END WEBSITE CONTENTS ***/

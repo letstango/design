@@ -822,6 +822,7 @@ width: 220px;
 .btn-group.btn-default:hover {
     background: none!important;
 }
+
 .btn-group.btn-default .btn {
     color: #9e9d9d;
     transition: 0.2s;
@@ -2270,9 +2271,13 @@ ul.info-widget > li span {
 
 .zoomContainer {
     z-index: 9999;
+    right: auto;
+    left: 0;
 }
 
 .zoomWindow {
+    right: auto;
+    left: 0;
     z-index: 9999;
     border-radius: 5px;
     border: 1px #dddddd solid!important;

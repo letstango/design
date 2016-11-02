@@ -152,7 +152,8 @@ $('html[dir="rtl"] .product-gallery-nav').slick({
       settings: {
         vertical: false,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        rtl: true
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -163,7 +164,9 @@ $('html[dir="rtl"] .product-gallery-nav').slick({
     
     
     
-$('.product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'});
+$('html[dir="ltr"] .product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'});
+    
+$('html[dir="rtl"] .product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif', zoomWindowOffetx: -800});
 
     
 /*

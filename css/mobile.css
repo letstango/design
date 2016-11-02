@@ -980,6 +980,10 @@
     #product-overview .product-summary > .row {
         margin-left: 0;
     }
+    
+    #product-overview .product-summary .row.split > div:first-child {
+        border-right: 0;
+    }
 
 }
 /****************************/
