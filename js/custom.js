@@ -453,7 +453,7 @@ $('#review-tabs .guidelines').readmore({
 });
 });
     
-    
+
     
     
 var outerHeight = 0;
@@ -570,5 +570,57 @@ $('#primary-sidebar .tooltip.tooltip-main.top .tooltip-inner').appendTo('#primar
 
 $('img.lazyloaded').lazyload();
     
+    
+$('#tab-content-payment .panel-title > span').on('click', function() {
+    $(this).find('input[type="radio"]').prop('checked', true);
+});
+    
+/*
+    Form Validator
+*/
+$.validate({
+    modules : 'toggleDisabled, security',
+    form: '.primary-form'
+});
+    
+/*
+    Note: This is for trigger Form Validator when user clicks on a Select dropdown but doesn't select any option and clicks outside the Select field to remove the dropdown
+*/
+$('.select-wrapper').on('click', function() {
+    $('body').click(function() {
+       $(this).find('select').change();   
+    });
+});
 
+/*
+    Note: The Form Validator adds a red border on the Input/Select element when it's invalid but the customized Select field's border is hidden so the red border doesn't appear on Select fields. The following code implements the red border on Select field's parent div (.select-wrapper) when the Select field is invalid.
+*/
+$('.select-wrapper select').on('change', function() {
+    if($(this).hasClass('valid')) {
+        $(this).parent('.select-wrapper').removeClass('error').addClass('valid');
+    } else if($(this).hasClass('error')) {
+        $(this).parent('.select-wrapper').removeClass('valid').addClass('error');
+    }
+});
+    
+
+/*
+    This is for the Checkout page tabs (Your Details/Payment). Clicking on the Proceed button switches to the next tab (Payment).
+*/
+$("#btn-proceed").click(function(e) {
+    e.preventDefault();
+  $('#checkout-tabs a[href="#tab-content-payment"]').tab('show');
+});
+    
+$("#btn-back").click(function(e) {
+    e.preventDefault();
+  $('#checkout-tabs a[href="#tab-content-details"]').tab('show');
+});
+
+/*
+    Note: This disables the Checkout Tab buttons, so user can't proceed to the next tab without completing the forms and clicking the "Proceed" button. 
+*/
+$('#checkout-tabs li a').prop('disabled', true);
+    
+    
 }); /* End jQuery */

@@ -32,6 +32,10 @@ html[dir="rtl"] .fa-quote-right {
 /**********************/
 /*** GLOBAL CLASSES ***/
 /**********************/
+html[dir="rtl"] .row > div {
+    float: right;
+}
+
 
 /**************************/
 /*** END GLOBAL CLASSES ***/
@@ -65,6 +69,30 @@ html[dir="rtl"] .form-group .input-group .input-group-addon {
     border-left: 1px #cccccc solid;
     border-radius: 5px 0 0 5px;
 }
+
+html[dir="rtl"] .select-wrapper .icon {
+    left: 8px;
+    right: auto;
+}
+
+/*
+    Form Validator
+*/
+html[dir="rtl"] input.valid,
+html[dir="rtl"] select.error,
+html[dir="rtl"] select.valid,
+html[dir="rtl"] select.error{
+    background-position: left 10px center!important;
+}
+
+html[dir="rtl"] .select-wrapper.valid,
+html[dir="rtl"] .select-wrapper.error {
+    background-position: left 20px center!important;
+}
+
+
+
+
 
 /*************************/
 /*** END FORM ELEMENTS ***/
@@ -158,6 +186,11 @@ html[dir="rtl"] #header-middle .process-button-group {
     padding-right: 30px!important;    
 }
 
+
+html[dir="rtl"] #header-middle .h1 {
+    float: left;
+    padding: 0;
+}
 
 /*
    Top Secondary Menu
@@ -417,6 +450,26 @@ html[dir="rtl"] .review-list .review-synopsis {
 }
 
 /*
+    Checkout Section
+*/
+html[dir="rtl"] #checkout-tabs > li {
+    float: right;
+}
+
+/*
+    Primary Tabs
+*/
+html[dir="rtl"] .primary-tabs-content .panel-title label {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+html[dir="rtl"] .primary-tabs-content .panel-title label + .icon {
+    right: auto;
+    left: 0;
+}
+
+/*
     Primary Sidebar
 */
 html[dir="rtl"] #primary-sidebar {
@@ -440,6 +493,17 @@ html[dir="rtl"] #range-slider .price-range > li.range-current {
 
 html[dir="rtl"] #range-slider .price-range > li.range-end {
     float: left;
+}
+
+/*
+    Checkout Aside
+*/
+html[dir="rtl"] .primary-data-widget .table-cell:first-child {
+    border-left: 1px #cccccc solid;
+}
+
+html[dir="rtl"] .secondary-data-widget .table-row.split.divider .table-cell:first-child {
+    border-left: 1px #cccccc solid;
 }
 /****************************/
 /*** END WEBSITE CONTENTS ***/
