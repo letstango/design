@@ -520,11 +520,22 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     
+/*  
+    Product Showcase
+*/
+    .product-showcase .col-right img {
+        margin: 4px auto;
+    }
 /*
     Product Gallery  
 */
     .product-gallery {
         width: 76%;
+    }
+    
+        
+    #banner-aside .link {
+        margin: 1em 0 0 0;
     }
     
 

@@ -1081,7 +1081,7 @@ ul#top-primary-menu > li > ul {
     position: absolute;
     top: 26px;
     left: 0;
-    z-index: 9999;
+    z-index: 9999999;
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
@@ -1353,14 +1353,14 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
 #header-shopping-cart .fa-shopping-cart .quantity {
     width: 100%;
     font-family: 'Shanti', Arial;
-    font-size: 0.4em;
+    font-size: 0.3em;
     font-weight: bold;
     color: #ffffff;
     text-align: center;
     position: absolute;
     left: 0;
-    top: 19%;
-    padding-left: 4px;
+    top: 26%;
+    padding-left: 7px;
 }
 
 #header-shopping-cart .cart-dropdown {
@@ -1368,7 +1368,7 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
+    transition: 1.5s;
     top: 44px;
     right: -8px;
     z-index: 999999;
@@ -1379,6 +1379,7 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
 }
 
 #header-shopping-cart:hover .cart-dropdown {
+    transition: 0.5s;
     opacity: 1;
     visibility: visible;
 }
@@ -1705,6 +1706,7 @@ ul.pagecrumb a:hover {
     Banner
 */
 #banner-wrap {
+    position: relative;
     margin: 0 0 30px 0;
 }
 
@@ -1712,6 +1714,10 @@ ul.pagecrumb a:hover {
     width: 75%;
     padding-left: 0;
     padding-right: 0;
+}
+
+#banner-wrap #banner-aside {
+    width: 23%!important;
 }
 
 #banner-wrap .col-md-4 {
@@ -1812,22 +1818,44 @@ ul.pagecrumb a:hover {
 #banner-aside {
     font-size: 10px;
     text-transform: uppercase;
+    position: inherit;
+}
+
+#banner-aside .aside-section {
+    width: 25%;
+    height: auto;
+    min-height: 100%;
+    position: absolute;
 }
 
 #banner-aside a {
-    height: 134px;
+    width: 100%;
+    position: absolute;
+    height: 33.33%;
     display: block;
     overflow: hidden;
     transition: 0.2s;
-    position: relative;
     border: 1px #ecebeb solid;
     padding: 10px 15px;
+}
+
+#banner-aside a:first-child {
+    border-bottom: 0;
+}
+
+#banner-aside a:nth-child(2) {
+    top: 33.33%;
+}
+
+#banner-aside a:last-child {
+    top: 66.66%;
+    border-top: 0;
 }
 
 #banner-aside a:hover:after {
     content: "";
     width: 130%;
-    height: 134px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -1871,6 +1899,7 @@ ul.pagecrumb a:hover {
     top: 10px;
     right: 10%;
 }
+
 
 /* 
     Featured Products
@@ -2009,6 +2038,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0d0d0', end
 
 .product-showcase .col-right img {
     width: 70%;
+    margin: 6px auto;
 }
 
 /*
@@ -3553,7 +3583,7 @@ ul.primary-tabs li:hover a {
 }
 
 #signup-form label i {
-    font-size: 0.55em;
+    font-size: 0.58em;
     font-style: normal;
     color: #cccccc;
 }

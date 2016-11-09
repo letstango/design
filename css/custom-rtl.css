@@ -227,6 +227,11 @@ html[dir="rtl"] #primary-menu ul.nav-subcategory {
 /*
     Banner Aside
 */
+html[dir="rtl"] #banner-wrap .col-md-4 {
+    padding-left: 0;
+    padding-right: 0.8%;
+}
+
 html[dir="rtl"] #banner-aside img {
     left: 8%;
     right: auto;
@@ -519,6 +524,21 @@ html[dir="rtl"] .secondary-data-widget .table-row.split.divider .table-cell:firs
 /**********************/
 /*** WEBSITE FOOTER ***/
 /**********************/
+/*
+    Footer Top
+*/
+html[dir="rtl"] #signup-form {
+    float: right;
+}
+
+html[dir="rtl"] #signup-form label {
+    float: right;
+}
+
+html[dir="rtl"] #contact-column {
+    float: left;
+}
+
 
 /*
     Footer Base

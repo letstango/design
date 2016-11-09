@@ -180,7 +180,8 @@ $('html[dir="rtl"] .product-gallery .img-zoom').elevateZoom({cursor: 'pointer', 
       arrows: false,
       fade: true,
         autoplay: true,
-      asNavFor: '#banner-nav'
+      asNavFor: '#banner-nav',
+        lazyLoad: 'ondemand'
     });
     
     $('html[dir="ltr"] #banner-nav').slick({
@@ -200,7 +201,8 @@ $('html[dir="rtl"] .product-gallery .img-zoom').elevateZoom({cursor: 'pointer', 
       fade: true,
         autoplay: true,
       asNavFor: '#banner-nav',
-        rtl: true
+        rtl: true,
+        lazyLoad: 'ondemand'
     });
     
     $('html[dir="rtl"] #banner-nav').slick({
@@ -224,6 +226,7 @@ arrows: true,
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 1,
+    lazyLoad: 'ondemand',
   responsive: [
     {
       breakpoint: 1024,
@@ -267,6 +270,7 @@ arrows: true,
   slidesToShow: 5,
   slidesToScroll: 1,
     rtl: true,
+    lazyload: 'ondemand',
   responsive: [
     {
       breakpoint: 1024,
@@ -301,13 +305,15 @@ arrows: true,
 
 $('html[dir="ltr"] #simple-carousel').slick({
     dots: true,
-    arrows: false
+    arrows: false,
+    lazyLoad: 'ondemand'
 });
     
 $('html[dir="rtl"] #simple-carousel').slick({
     dots: true,
     arrows: false,
-    rtl: true
+    rtl: true,
+    lazyLoad: 'ondemand'
 });
 /*
     Product Rating
@@ -568,7 +574,10 @@ $('html[dir="rtl"] #filter-price').slider({
 
 $('#primary-sidebar .tooltip.tooltip-main.top .tooltip-inner').appendTo('#primary-sidebar .price-range .range-current');
 
+
+
 $('img.lazyloaded').lazyload();
+
     
     
 $('#tab-content-payment .panel-title > span').on('click', function() {
