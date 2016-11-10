@@ -15,7 +15,6 @@ $(document).ready(function() {
 
 
 
-
 /************************/
 /*** WEBSITE CONTENTS ***/
 /************************/
@@ -45,11 +44,25 @@ $(document).ready(function() {
     
     $('#primary-menu .fa-plus-square-o').click(function() {
         $(this).toggleClass('fa-minus-square-o fa-plus-square-o');
-    }); 
+    });
     
+    
+/*
+    This toggles the Shopping Cart dropdown
+*/
     $('#header-shopping-cart > a').click(function(e) {
         e.preventDefault();
+        $('#header-shopping-cart .cart-dropdown').fadeToggle();
     });
+    
+/*
+    This is to remove products added to the shopping cart dropdown
+*/
+    
+    $('#header-shopping-cart ul.item-list .fa-close').on('click', function() {
+        $(this).parents('.table-row').remove(); 
+    });
+
 
     $(window).on('scroll', function() {
         if( $("#header-middle").hasClass('sticking')) { 
@@ -584,13 +597,7 @@ $('#tab-content-payment .panel-title > span').on('click', function() {
     $(this).find('input[type="radio"]').prop('checked', true);
 });
     
-/*
-    Form Validator
-*/
-$.validate({
-    modules : 'toggleDisabled, security',
-    form: '.primary-form'
-});
+
     
 /*
     Note: This is for trigger Form Validator when user clicks on a Select dropdown but doesn't select any option and clicks outside the Select field to remove the dropdown

@@ -445,7 +445,7 @@
                                             <input type="text" class="form-control" placeholder="Enter Code Here" />
                                         </div>
                                         
-                                        <div class="table-cell">
+                                        <div class="table-cell txt-center">
                                             <a href="#" class="btn btn-basic">Apply Coupon</a>
                                         </div>
                                     </div> <!-- END ROW -->
@@ -693,6 +693,15 @@
     
     <script src="js/custom.js"></script>
     
+    <script type="text/javascript">
+/*
+    Form Validator
+*/
+    $.validate({
+        modules : 'toggleDisabled, security',
+        form: '.primary-form'
+    });
+    </script>
     
 <!-- END JAVASCRIPT -->
     

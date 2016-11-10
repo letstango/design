@@ -177,6 +177,23 @@ html[dir="rtl"] #header-shopping-cart .cart-dropdown:before {
     left: 16px;
 }
 
+html[dir="rtl"] #header-shopping-cart ul.item-list .table-cell:first-child {
+    padding-right: 20px;
+    padding-left: 5px;
+}
+
+html[dir="rtl"] #header-shopping-cart ul.item-list .table-cell:last-child {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+html[dir="rtl"] #header-shopping-cart ul.item-list .table-cell .title .fa-close {
+    position: absolute;
+    right: auto;
+    left: -10px;
+    top: 2px;
+}
+
 html[dir="rtl"] #header-middle .fa-bars {
     float: right;
     margin: 0 0 0 30px;

@@ -1366,9 +1366,7 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
 #header-shopping-cart .cart-dropdown {
     min-width: 300px;
     position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: 1.5s;
+    display: none;
     top: 44px;
     right: -8px;
     z-index: 999999;
@@ -1376,12 +1374,6 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     background: #f57d31;
     border-radius: 8px;
     padding: 6px 0 0 0;
-}
-
-#header-shopping-cart:hover .cart-dropdown {
-    transition: 0.5s;
-    opacity: 1;
-    visibility: visible;
 }
 
 #header-shopping-cart .cart-dropdown:before {
@@ -1396,18 +1388,68 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     right: 16px;
 }
 
-#header-shopping-cart .cart-dropdown > ul {
+#header-shopping-cart ul.cart-items {
     list-style: none;
     background: #ffffff;
     border-radius: 2px 2px 8px 8px;
     margin: 0;
-    padding: 10px;
 }
 
-#header-shopping-cart .cart-dropdown > ul > li.placeholder {
-    color: #777777;
-    font-size: 13px;
-    padding: 10px;
+#header-shopping-cart ul.cart-items > li:first-child {
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 0;
+}
+
+#header-shopping-cart ul.item-list {
+    margin: 10px 0;
+}
+
+#header-shopping-cart ul.item-list .table-row {
+    position: relative;
+}
+
+#header-shopping-cart ul.item-list .table-cell {
+    vertical-align: middle;
+    padding: 10px 20px;
+}
+
+#header-shopping-cart ul.item-list .table-cell:first-child {
+    width: 30%;
+    padding-right: 5px;
+}
+
+#header-shopping-cart ul.item-list .table-cell:first-child img {
+    max-width: 75px;
+}
+
+#header-shopping-cart ul.item-list .table-cell:last-child {
+    padding-left: 5px;
+}
+
+#header-shopping-cart ul.item-list .table-cell .title {
+    position: relative;
+}
+
+#header-shopping-cart ul.item-list .table-cell .title .fa-close {
+    position: absolute;
+    right: -10px;
+    top: 2px;
+}
+
+#header-shopping-cart ul.cart-items > li:last-child {
+    padding: 0 20px;
+}
+
+#header-shopping-cart footer {
+    border-top: 1px #ecebeb solid;
+    padding: 20px 0;
+}
+
+#header-shopping-cart footer a:not(:first-child) {
+    width: 48%;
+    display: inline-block;
+    margin: 0 0 0 1%;
 }
 
 /*
@@ -3142,7 +3184,7 @@ ul.info-widget > li span {
     Checkout Section
 */
 #checkout-section {
-    width: 80%;
+    width: 992px;
     margin: 0 auto;
 }
 
@@ -3202,6 +3244,9 @@ ul.primary-tabs li:hover a {
 /*
     Checkout Aside
 */
+.checkout-aside .btn {
+    white-space: initial;
+}
 
 /*
     Primary Data Widget / Secondary Data Widget
@@ -3253,11 +3298,11 @@ ul.primary-tabs li:hover a {
 }
 
 .primary-data-widget > .table > .table-row > .table-cell:first-child {
-    width: 80%;
+    width: 55%;
 }
 
 .primary-data-widget > .table > .table-row > .table-cell:last-child {
-    width: 20%;
+    width: 45%;
 }
 
 .primary-data-widget .table-cell:first-child {
