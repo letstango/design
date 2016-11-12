@@ -575,6 +575,7 @@ img {
 
 article,
 aside {
+    position: relative;
     margin: 0 0 40px 0;
 }
 
@@ -992,11 +993,12 @@ input[type="button"].btn-basic {
 /*
     Radion Button Group
 */
+.btn-group.btn-default,
 .btn-group.btn-default:hover {
     background: none!important;
+    border: 0!important;
 }
 
-.btn-group.btn-default .btn,
 input[type="button"].btn-default,
 .btn-default {
     color: #9e9d9d;
@@ -1042,6 +1044,8 @@ input[type="button"].btn-default:active {
 /**********************/
 /*** WEBSITE HEADER ***/
 /**********************/
+
+
 /*
     Header Top
 */
@@ -1202,8 +1206,14 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
 /*
     Header Middle
 */
+#header-middle.floating {
+    position: fixed;
+    top: 0;
+}
+
 #header-middle {
     font-size: 10px;
+    position: relative;
     z-index: 999999;
     left: 0;
     right: 0;
@@ -1780,6 +1790,10 @@ ul.pagecrumb a:hover {
     margin-bottom: 12px;
 }
 
+#banner-carousel .slick-dots li {
+    width: 8px;
+}
+
 #banner-carousel img {
     border-radius: 6px;
     border: 1px #ebebeb solid;
@@ -2303,8 +2317,16 @@ ul.info-widget > li span {
     border-radius: 10px;
 }
 
+#simple-carousel .slick-dots li button::before {
+    font-size: 8px!important;
+}
+
+#simple-carousel .slick-dots li {
+    width: 8px!important;
+}
+
 #simple-carousel .slick-dots {
-    bottom: 10px;
+    bottom: -30px;
 }
 
 #simple-carousel .slick-dots li {
@@ -2366,7 +2388,7 @@ ul.info-widget > li span {
 }
 
 .product-list .user-rating {
-    width: 70%;
+    width: 75%;
     display: inline-block;
     position: relative;
     z-index: 99;
@@ -2472,6 +2494,10 @@ ul.info-widget > li span {
     content: "\f104";
 }
 
+.product-gallery .slick-slide {
+    position: relative;
+}
+
 .product-gallery a.img-lightbox {
     font-size: 1.2em;
     font-weight: bold;
@@ -2480,8 +2506,19 @@ ul.info-widget > li span {
     display: block;
     border-radius: 5px;
     border: 1px #dddddd solid;
+    margin: 5px 0 0 0;
     padding: 5px;
 }
+
+.product-gallery-wrap {
+    position: relative;
+}
+
+.product-gallery-wrap .btn-zoom {
+    display: none;
+}
+
+
 
 .product-gallery-nav .slick-next,
 .product-gallery-nav .slick-prev {
@@ -3547,14 +3584,17 @@ ul.primary-tabs li:hover a {
 
 #range-slider .price-range > li.range-start {
     width: 44px;
+    float: left;
 }
 
 #range-slider .price-range > li.range-current {
-    width: 48%;
+    width: 51%;
+    text-align: center;
 }
 
 #range-slider .price-range > li.range-end {
     width: 70px;
+    float: right;
 }
 
 /*

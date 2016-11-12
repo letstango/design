@@ -232,12 +232,16 @@
 
 
 @media only screen and (max-width: 991px) {
-
 /*
     Header Middle
 */
+    #header-middle #brand-logo {
+        vertical-align: middle;
+    }
+    
     #header-middle .fa-bars {
         display: inline-block;
+        margin-top: 5px;
     }
     
     #header-middle.not-sticking {
@@ -417,6 +421,10 @@
 
 
 @media only screen and (max-width: 767px) {
+
+    #page-header {
+        min-height: 120px;
+    }
 /*
     Header Top
 */
@@ -458,6 +466,11 @@
         display: block;        
         text-align: right!important;
         padding: 10px 0 0 0;
+    }
+    
+    #header-search-form .button-column {
+        width: 75px;
+        font-size: 0.8em;
     }
 }
 /**************************/
@@ -610,6 +623,7 @@
          display: block!important;
     }
 }
+
 
 @media only screen and (max-width: 991px) {
 /*
@@ -792,6 +806,11 @@
     #primary-sidebar footer a {
         display: block!important;
     }
+    
+    #range-slider .price-range > li.range-current {
+        width: 82%;
+        text-align: center;
+    }
 }
 
 
@@ -896,9 +915,34 @@
 /*
     Product Overview
 */
-    #product-overview .product-gallery-wrap,
     #product-overview .product-summary {
         width: 100%!important;
+    }
+    
+    #product-overview .product-gallery-wrap {
+        width: 320px!important;
+        float: none;
+        margin: 0 auto 15px auto;
+    }
+    
+    .product-gallery a.img-lightbox {
+        opacity: 0;
+    }
+    
+    .product-gallery-wrap .btn-zoom {
+        width: 76%;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #f57d31;
+        text-align: center;
+        display: block;
+        position: absolute;
+        top: 250px;
+        left: 12%;
+        z-index: -1;
+        border-radius: 5px;
+        border: 1px #dddddd solid;
+        padding: 5px;
     }
     
     #product-overview .product-summary > .row > .col {
@@ -1017,6 +1061,10 @@
     #simple-carousel img {
         border-radius: 5px;
     }
+    
+    #simple-carousel .slick-dots li button::before {
+        font-size: 6px!important;
+    }
 
     #simple-carousel .slick-dots {
         bottom: -22px;
@@ -1063,6 +1111,14 @@
         float: none!important;
         clear: both!important;        
         margin: auto;
+    }
+    
+/*
+    Primary Sidebar  
+*/
+    #range-slider .price-range > li.range-current {
+        width: 54%;
+        text-align: center;
     }
 
 }
