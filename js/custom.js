@@ -55,7 +55,7 @@ $(document).ready(function() {
 /*
     Primary Menu toggle feature for tablets and mobile resolutions
 */
-    $('.fa-bars').on('click tap', function (e) {
+    $('#page-header .fa-bars').on('click tap', function (e) {
         $('body').toggleClass('animate');
         e.stopPropagation();
     });
@@ -499,6 +499,8 @@ $('#review-tabs .guidelines').readmore({
     
 
     
+
+    
     
 var outerHeight = 0;
 $('#expert-reviews .review-list > .row.visible').each(function() {
@@ -562,6 +564,7 @@ $('.btn-number').click(function(e){
 $('.input-number').focusin(function(){
    $(this).data('oldValue', $(this).val());
 });
+    
 $('.input-number').change(function() {
     
     minValue =  parseInt($(this).attr('min'));
@@ -664,6 +667,34 @@ $("#btn-back").click(function(e) {
     Note: This disables the Checkout Tab buttons, so user can't proceed to the next tab without completing the forms and clicking the "Proceed" button. 
 */
 $('#checkout-tabs li a').prop('disabled', true);
+    
+    
+/*
+    Dashboard Pages
+*/
+/*
+    Dashboard Primary Content
+*/
+    $('.form-group-parent .form-group-child-toggle').on('click', function(e) {
+        $(this).siblings('.form-group-child').slideToggle('slow'); 
+        return false;
+    });
+/*
+    Dashboard Primary Sidebar
+*/
+    $('#dashboard-primary-sidebar .fa-bars').on('click', function(e) {
+        e.preventDefault();
+       $('#dashboard-primary-sidebar').toggleClass('active');
+    })
+    
+    $('#dashboard-primary-sidebar ul.order-list').readmore({
+        speed: 500,
+        collapsedHeight: 54,
+        heightMargin: 16,
+        moreLink: '<footer><a href="#" class="toggle-link link txt-sm">View All</a></footer>',
+        lessLink: '<footer><a href="#" class="toggle-link link txt-sm">View Less</a></footer>'
+    });
+
     
     
 }); /* End jQuery */
