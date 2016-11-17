@@ -57,6 +57,16 @@ $(document).ready(function() {
 */
     $('#page-header .fa-bars').on('click tap', function (e) {
         $('body').toggleClass('animate');
+        /*
+        if($('#header-middle').hasClass('floating')) {
+            $('#header-middle.floating').click(
+                function() {
+                    $(this).animate({'left':'248px'});
+                }, function() {
+                    $(this).animate({'left':'0'});
+                }
+            );
+        }*/
         e.stopPropagation();
     });
     
@@ -113,7 +123,7 @@ $('html[dir="ltr"] .product-gallery').slick({
   asNavFor: '.product-gallery-nav',
     responsive: [
     {
-      breakpoint: 767,
+      breakpoint: 991,
       settings: {
           fade: false
       }
@@ -180,7 +190,7 @@ $('html[dir="rtl"] .product-gallery-nav').slick({
 });
     
     $(window).on('load resize', function() {
-        if($('#header-top').is(':visible')) {
+        if($('#header-auction').is(':visible')) {
             $('html[dir="ltr"] .product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'});
 
             $('html[dir="rtl"] .product-gallery .img-zoom').elevateZoom({cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif', zoomWindowOffetx: -800});
@@ -655,7 +665,10 @@ $('.select-wrapper select').on('change', function() {
 */
 $("#btn-proceed").click(function(e) {
     e.preventDefault();
-  $('#checkout-tabs a[href="#tab-content-payment"]').tab('show');
+    $('#checkout-tabs a[href="#tab-content-payment"]').tab('show');
+    $('html, body').animate({
+        scrollTop: $("#page-header").offset().top
+    }, 1000);
 });
     
 $("#btn-back").click(function(e) {
@@ -693,6 +706,15 @@ $('#checkout-tabs li a').prop('disabled', true);
         heightMargin: 16,
         moreLink: '<footer><a href="#" class="toggle-link link txt-sm">View All</a></footer>',
         lessLink: '<footer><a href="#" class="toggle-link link txt-sm">View Less</a></footer>'
+    });
+    
+    $('.panel-toggle .panel-body').hide();
+    
+    $('.panel-toggle.visible .panel-body').show();
+    
+    $('.panel-toggle a.btn-toggle').on('click', function(e) {
+        e.preventDefault();
+       $(this).parent('.panel-heading').siblings('.panel-body').slideToggle(); 
     });
 
     

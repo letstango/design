@@ -147,6 +147,19 @@ html[dir="rtl"] ul#top-primary-menu > li:first-child {
 /*
     Header Middle
 */
+
+html[dir="rtl"] #header-middle.floating {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
+}
+
+html[dir="rtl"] body.animate #header-middle.floating {
+    right: 248px;
+    transition: 0.4s;
+}
+
 html[dir="rtl"] #brand-logo {
     float: right;
 }
