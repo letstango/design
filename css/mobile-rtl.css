@@ -71,11 +71,7 @@
     html[dir="rtl"] body {
         padding-right: 0;    
     }
-    
-    html[dir="rtl"] body.animate {
-        padding-right: 248px;
-    }
-    
+
     html[dir="rtl"] body.animate .body-overlay {
         left: 0;
         right: 238px;
@@ -177,11 +173,15 @@
     Header Base
 */
     html[dir="rtl"] #header-base {
-        right: -248px!important;
+        right: -248px;
     }
     
-    html[dir="rtl"] body.animate #header-base {
-        right: 0!important;
+    html[dir="rtl"] #primary-menu {
+        padding: 0 16px 0 0;
+    }
+    
+    html[dir="rtl"] #primary-menu > ul > li {
+        text-align: right;
     }
     
     html[dir="rtl"] #primary-menu > ul > li > a {
@@ -314,8 +314,18 @@
 }
 
 @media only screen and (max-width: 991px) {
-
     
+    html[dir="rtl"] #dashboard-secondary-content {
+        float: none;
+    }
+    
+    html[dir="rtl"] #dashboard-primary-sidebar #dashboard-nav > ul > li > a:before {
+        margin: 0 4px 0 10px;
+    }
+    
+    html[dir="rtl"] #dashboard-secondary-sidebar {
+        float: none!important;
+    }
 }
 
 
@@ -347,6 +357,14 @@
         right: auto;
         left: 10px;
     }
+    
+/*
+    Dashboard Pages  
+*/
+    html[dir="rtl"] .table-wishlist .table-content .table-cell:last-child .fa-close {
+        right: auto;
+        left: 0;
+    }
 }
 /****************************/
 /*** END WEBSITE CONTENTS ***/
@@ -376,7 +394,9 @@
 
 
 @media only screen and (max-width: 767px) {
-
+    html[dir="rtl"] #signup-form label {
+        float: none;
+    }
 }
 /**************************/
 /*** END WEBSITE FOOTER ***/

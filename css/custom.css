@@ -1239,12 +1239,13 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     width: 100%;
     position: fixed;
     top: 0;
-    transition: 0.4s;
+    /*transition: 0.4s;*/
 }
 
 body.animate #header-middle.floating {
+    /*
     left: 248px;
-    transition: 0.4s;
+    transition: 0.4s;*/
 }
 
 #header-middle {
@@ -1258,11 +1259,14 @@ body.animate #header-middle.floating {
 }
 
 #header-middle .fa-bars {
-    font-size: 2em;
+    font-size: 2.4em;
     float: left;
     display: none;
     cursor: pointer;
-    margin: 0 30px 0 0;
+    position: relative;
+    top: -10px;
+    margin: 0 0 0 -15px;
+    padding: 15px 30px 10px 15px;
 }
 
 #header-middle .h1 {

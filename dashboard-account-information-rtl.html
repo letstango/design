@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html class="no-js" dir="ltr">
+<html class="no-js" dir="rtl">
 
 <head>
     
@@ -757,280 +757,111 @@
     <div class="content-wrap">    
         <main>
             <div class="main clearfix">
+                <aside id="dashboard-primary-sidebar">
+                    <span class="h3 txt-dark">My Account <a href="#" class="fa fa-bars"></a></span>
+                <nav id="dashboard-nav" class="txt-md">
+                    <ul>
+                        <li><a href="dashboard-home.html">Account Dashboard</a></li>    
+                        <li class="active"><a href="dashboard-account-information.html">Account Information</a></li>
+                        <li><a href="dashboard-address-book.html">Address Book</a></li>
+                        <li><a href="dashboard-my-orders.html">My Orders</a></li>
+                        <li><a href="dashboard-billing-agreements.html">Billing Agreements</a></li>
+                        <li><a href="dashboard-recurring-profiles.html">Recurring Profiles</a></li>
+                        <li><a href="dashboard-my-product-reviews.html">My Product Reviews</a></li>
+                        <li><a href="dashboard-my-tags.html">My Tags</a></li>
+                        <li><a href="dashboard-my-wishlist.html">My Wishlist</a></li>
+                        <li><a href="dashboard-my-applications.html">My Applications</a></li>
+                        <li><a href="dashboard-newsletter-subscriptions.html">Newsletter Subscriptions</a></li>
+                        <li><a href="dashboard-my-downloadable-products.html">My Downloadable Products</a></li>
+                    </ul>
+                </nav>
+                </aside>
                 
-                <div class="primary-wrapper">
-     
-                    <h1 class="light">Shopping Cart</h1>
-
-                    <div id="dashboard-secondary-content">
-                        <div class="panel-outline">
-                        <form class="primary-form outline">
-                        <div class="table default table-cart outline">
-                            <div class="table-row table-header">
-                                <div class="table-cell"></div>
-                                <div class="table-cell"></div>
-                                <div class="table-cell">Product Name</div>
-                                <div class="table-cell">Unit Price</div>
-                                <div class="table-cell">Qty</div>
-                                <div class="table-cell">Subtotal</div>
-                            </div> <!-- END TABLE HEADER -->
-
-                            <div class="table-row table-content">
-                                <div class="table-cell"><a href="#" class="fa fa-close txt-secondary"></a></div>
-                                <div class="table-cell"><img src="images/product-21.jpg" alt="" /></div>
-                                <div class="table-cell">
-                                    <a href="#" class="link base-xs-large-buffer">Samsung Galaxy Phone</a>
-                                    <ul class="basic-list">
-                                        <li>
-                                            <b><em>Color</em></b>
-                                            <ul class="basic-list child">
-                                                <li>Blue</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                <div id="dashboard-primary-content">
+                    <h1 class="light">Edit Account Information</h1>
+                    
+                    <div class="panel-primary">
+                        <h3 class="light txt-caps">Account Information</h3>
+                        
+                        
+                        <form class="primary-form">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="form-group">
+                                        <label for="input-first-name">First Name<span class="txt-alert">*</span></label>
+                                        <input type="text" class="form-control" id="input-first-name" placeholder="Enter First Name" data-validation="custom" data-validation-regexp="^([a-z, A-Z]+)$" data-validation-help="Only Alphabets allowed (A-Z)" data-validation-error-msg="Please enter your first name">
+                                    </div>
                                 </div>
-
-                                <div class="table-cell">
-                                    $250.00
+                                
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="form-group">
+                                        <label for="input-middle-name">Middle Name/Initial<span class="txt-alert">*</span></label>
+                                        <input type="text" class="form-control" id="input-middle-name" placeholder="Enter Middle Name" data-validation="custom" data-validation-regexp="^([a-z, A-Z]+)$" data-validation-help="Only Alphabets allowed (A-Z)" data-validation-error-msg="Please enter your middle name">
+                                    </div>
                                 </div>
-
-                                <div class="table-cell">
-                                    <div class="input-group input-quantity-group">
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]"><i class="fa fa-minus"></i></button>
-                                        </div>
-                                        <div>
-                                        <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                                        </div>
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"><i class="fa fa-plus"></i></button>
-                                        </div>
-                                      </div>
-
-                                        <a href="#" class="fa fa-pencil txt-secondary"></a>
-                                </div>
-
-                                <div class="table-cell">
-                                    <span class="txt-secondary">$250.00</span>
-                                </div>
-                            </div> <!-- END TABLE ROW -->
-
-
-                            <div class="table-row table-content">
-                                <div class="table-cell"><a href="#" class="fa fa-close txt-secondary"></a></div>
-                                <div class="table-cell"><img src="images/product-21.jpg" alt="" /></div>
-                                <div class="table-cell">
-                                    <a href="#" class="link base-xs-large-buffer">Samsung Galaxy Phone</a>
-                                    <ul class="basic-list">
-                                        <li>
-                                            <b><em>Color</em></b>
-                                            <ul class="basic-list child">
-                                                <li>Blue</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="table-cell">
-                                    $250.00
-                                </div>
-
-                                <div class="table-cell">
-                                    <div class="input-group input-quantity-group">
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]"><i class="fa fa-minus"></i></button>
-                                        </div>
-                                        <div>
-                                        <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                                        </div>
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"><i class="fa fa-plus"></i></button>
-                                        </div>
-                                      </div>
-
-                                        <a href="#" class="fa fa-pencil txt-secondary"></a>
-                                </div>
-
-                                <div class="table-cell">
-                                    <span class="txt-secondary">$250.00</span>
-                                </div>
-
-                            </div> <!-- END TABLE ROW -->
-
-                        </div>
-                        </form>
-                            
-                            <footer class="dashboard-footer table default top-md-buffer">
-                            <div class="table-row">
-                                <div class="table-cell txt-md">
-                                    <a href="#" class="btn btn-basic">Continue Shopping</a>
-                                </div>
-
-                                <div class="table-cell txt-right">
-                                    <a href="#" class="btn btn-basic">Clear Shopping Cart</a> <a href="#" class="btn btn-basic">Update Shopping Cart</a>
+                                
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+                                    <div class="form-group">
+                                        <label for="input-first-name">Last Name<span class="txt-alert">*</span></label>
+                                        <input type="text" class="form-control" id="input-last-name" placeholder="Enter Last Name" data-validation="custom" data-validation-regexp="^([a-z, A-Z]+)$" data-validation-help="Only Alphabets allowed (A-Z)" data-validation-error-msg="Please enter your last name">
+                                    </div>
                                 </div>
                             </div> <!-- END ROW -->
-                        </footer>
-                        </div> <!-- END PANEL OUTLINE -->
-                    </div> <!-- END DASHBOARD SECONDARY CONTENT -->
-
-
-                    <aside id="dashboard-secondary-sidebar">
-                         <div class="table default panel-section panel-clear">
-                            <div class="table-row">
-                                <div class="panel panel-default panel-toggle table-cell">
-                                    <div class="panel-heading txt-sm">
-                                        <strong class="title txt-caps">Discount Codes</strong>                                    
-
-                                        <a href="#" class="btn btn-basic btn-toggle pull-right"><i class="fa fa-caret-down txt-light"></i></a>
+                            
+                            
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                        <label for="input-email-address">Email Address<span class="txt-alert">*</span></label>
+                                        <input type="email" class="form-control" id="input-email-address" placeholder="Enter Email Address" data-validation="email" data-validation-allowing="-_.@" data-validation-help="Only Alphabets (A-Z), Numbers (0-9) and Special Characters @-_. allowed" data-validation-error-msg="Please enter a valid email address" />
                                     </div>
-
-                                    <div class="panel-body">
-                                        <span class="para txt-sm">
-                                            Lorem Ipsium
-                                        </span>
-                                    </div>
-                                </div> <!-- END PANEL -->
-                             </div> <!-- END TABLE ROW -->
-                        </div> <!-- END TABLE / PANEL SECTION -->
-                        
-                        <div class="table default panel-section panel-clear">
-                            <div class="table-row">
-                                <div class="panel panel-default panel-toggle panel-hidden table-cell">
-                                    <div class="panel-heading txt-sm">
-                                        <strong class="title txt-caps">Estimate Shipping and Tax</strong>                                    
-
-                                        <a href="#" class="btn btn-basic btn-toggle pull-right"><i class="fa fa-caret-down txt-light"></i></a>
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <span class="para txt-sm">
-                                            Lorem Ipsium
-                                        </span>
-                                    </div>
-                                </div> <!-- END PANEL -->
-                             </div> <!-- END TABLE ROW -->
-                        </div> <!-- END TABLE / PANEL SECTION -->
-                        
-                        
-                        <div class="table default panel-section panel-clear">
-                            <div class="table-row">
-                                <div class="panel panel-default table-cell">
-                                    <div class="panel-heading txt-sm">
-                                        <strong class="title txt-caps">Cart Totals</strong>                         
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <div class="txt-md base-xs-large-buffer row-section">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                                    <span class="txt-light-dark">Subtotal</span>
-                                                </div>
-                                                
-                                                <div class="col-xs-6 col-sm-6 col-md-6 txt-right">
-                                                    <strong>$569.00</strong>
-                                                </div>
-                                            </div> <!-- END ROW -->
+                                </div>
+                            </div> <!-- END ROW -->
+                            
+                             <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div id="password-group" class="form-group form-group-parent">
+                                        <label for="input-current-password">Current Password<span class="txt-alert">*</span></label>
+                                        <input name="pass" type="password" class="form-control base-xs-buffer" id="input-current-password" placeholder="Enter password" data-validation="strength" data-validation-strength="2" data-validation-error-msg="Please enter a valid password" />
+                                        
+                                        <div class="form-group-child">
+                                            <div class="form-group">
+                                                <label for="input-current-password">New Password<span class="txt-alert">*</span></label>
+                                                <input name="pass" type="password" class="form-control" id="input-current-password" placeholder="Enter password" data-validation="strength" data-validation-strength="2" data-validation-error-msg="Please enter a valid password" />
+                                            </div>  
                                             
-                                            
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                                    <span class="txt-light-dark">Grand Total</span>
-                                                </div>
-                                                
-                                                <div class="col-xs-6 col-sm-6 col-md-6 txt-right">
-                                                    <strong class="txt-lg">$569.00</strong>
-                                                </div>
-                                            </div> <!-- END ROW -->
+                                            <div class="form-group">
+                                                <label for="input-current-password">Retype New Password<span class="txt-alert">*</span></label>
+                                                <input name="pass" type="password" class="form-control" id="input-current-password" placeholder="Enter password" data-validation="strength" data-validation-strength="2" data-validation-error-msg="Please enter a valid password" />
+                                            </div>
                                         </div>
-                                        <a href="#" class="btn btn-block btn-primary txt-lg">Proceed to Checkout</a>
-                                            <a href="#" class="link txt-md top-xs-medium-buffer txt-center">Checkout with Multiple Addresses</a>
+                                        
+                                        
+                                        <label for="change-password" class="form-group-child-toggle"><input type="checkbox" id="change-password" /> Change Password</label>
+                                    </div> <!-- END PASSWORD GROUP / FORM GROUP PARENT -->
+                                    
+                                </div>
+                            </div> <!-- END ROW -->
+                            
+
+
+                             <footer class="dashboard-footer table default top-md-buffer">
+                                <div class="table-row">
+                                    <div class="table-cell txt-md">
+                                        <a href="dashboard-home.html" class="link">&laquo; Back</a>
                                     </div>
-                                </div> <!-- END PANEL -->
-                             </div> <!-- END TABLE ROW -->
-                        </div> <!-- END TABLE / PANEL SECTION -->
-                    </aside> <!-- END DASHBOARD SECONDARY SIDEBAR -->
-               
+
+                                    <div class="table-cell txt-right">
+                                        <span class="txt-alert txt-xs base-xs-large-buffer">*Required Fields</span>
+                                        <input type="submit" value="Save" class="txt-sm txt-caps" />
+                                    </div>
+                                </div> <!-- END ROW -->
+                            </footer>
+                        </form>
+                    </div>
                     
-                    <div class="clearfix"></div>
-                        
-                        <h3 class="txt-dark top-lg-buffer">Based on your selection, you may be interested in the following items:</h3>
-
-                    
-                        <div class="row basic-gallery txt-md">
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-                        </div> <!-- END ROW -->
-                    
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                </div> <!-- END PRIMARY WRAPPER -->
+                
+                </div> <!-- END DASHBOARD PRIMARY CONTENT -->
             </div> <!-- END MAIN -->
         </main>
     </div> <!-- END CONTENT WRAP -->
@@ -1227,6 +1058,16 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     
     <script src="js/custom.js"></script>
+    
+    <script type="text/javascript">
+/*
+    Form Validator
+*/
+    $.validate({
+        modules : 'toggleDisabled, security',
+        form: '.primary-form'
+});
+    </script>
     
 <!-- END JAVASCRIPT -->
     

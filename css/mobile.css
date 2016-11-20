@@ -87,13 +87,11 @@
         Menu Toggle Animations
     */
     body {
-        transition: 0.4s;
         padding-left: 0;
     }
     
     body.animate {
-        transition: 0.4s;
-        padding-left: 248px;
+/*        padding-left: 248px;*/
     }
     
     body.animate:after {
@@ -248,7 +246,6 @@
     
     #header-middle .fa-bars {
         display: inline-block;
-        margin-top: 5px;
     }
     
     #header-middle.not-sticking {
@@ -301,19 +298,17 @@
         height: 100%;
         overflow-y: scroll;
         font-size: 12px;
-        transition: 0.4s;
         position: fixed;
         top: 0;
         left: -248px;
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
+        /*-webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);*/
     }
     
     body.animate #header-base {
-        transition: 0.4s;
-        left: 0;
-        -webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);
+        /*left: 0;*/
+        /*-webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);*/
     }
     
     /*
@@ -481,7 +476,7 @@
     }
     
     #header-search-form .button-column {
-        width: 75px;
+        width: 80px;
         font-size: 0.8em;
     }
 }
@@ -1285,6 +1280,10 @@
 .panel-primary {
 
     padding: 20px;
+}
+    
+.panel .panel-heading .title {
+    width: 50%;
 }
     
 /*

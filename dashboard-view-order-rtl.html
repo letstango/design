@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html class="no-js" dir="ltr">
+<html class="no-js" dir="rtl">
 
 <head>
     
@@ -757,280 +757,196 @@
     <div class="content-wrap">    
         <main>
             <div class="main clearfix">
-                
-                <div class="primary-wrapper">
-     
-                    <h1 class="light">Shopping Cart</h1>
-
-                    <div id="dashboard-secondary-content">
-                        <div class="panel-outline">
-                        <form class="primary-form outline">
-                        <div class="table default table-cart outline">
-                            <div class="table-row table-header">
-                                <div class="table-cell"></div>
-                                <div class="table-cell"></div>
-                                <div class="table-cell">Product Name</div>
-                                <div class="table-cell">Unit Price</div>
-                                <div class="table-cell">Qty</div>
-                                <div class="table-cell">Subtotal</div>
-                            </div> <!-- END TABLE HEADER -->
-
-                            <div class="table-row table-content">
-                                <div class="table-cell"><a href="#" class="fa fa-close txt-secondary"></a></div>
-                                <div class="table-cell"><img src="images/product-21.jpg" alt="" /></div>
-                                <div class="table-cell">
-                                    <a href="#" class="link base-xs-large-buffer">Samsung Galaxy Phone</a>
-                                    <ul class="basic-list">
-                                        <li>
-                                            <b><em>Color</em></b>
-                                            <ul class="basic-list child">
-                                                <li>Blue</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="table-cell">
-                                    $250.00
-                                </div>
-
-                                <div class="table-cell">
-                                    <div class="input-group input-quantity-group">
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]"><i class="fa fa-minus"></i></button>
-                                        </div>
-                                        <div>
-                                        <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                                        </div>
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"><i class="fa fa-plus"></i></button>
-                                        </div>
-                                      </div>
-
-                                        <a href="#" class="fa fa-pencil txt-secondary"></a>
-                                </div>
-
-                                <div class="table-cell">
-                                    <span class="txt-secondary">$250.00</span>
-                                </div>
-                            </div> <!-- END TABLE ROW -->
-
-
-                            <div class="table-row table-content">
-                                <div class="table-cell"><a href="#" class="fa fa-close txt-secondary"></a></div>
-                                <div class="table-cell"><img src="images/product-21.jpg" alt="" /></div>
-                                <div class="table-cell">
-                                    <a href="#" class="link base-xs-large-buffer">Samsung Galaxy Phone</a>
-                                    <ul class="basic-list">
-                                        <li>
-                                            <b><em>Color</em></b>
-                                            <ul class="basic-list child">
-                                                <li>Blue</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="table-cell">
-                                    $250.00
-                                </div>
-
-                                <div class="table-cell">
-                                    <div class="input-group input-quantity-group">
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]"><i class="fa fa-minus"></i></button>
-                                        </div>
-                                        <div>
-                                        <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
-                                        </div>
-                                        <div>
-                                        <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]"><i class="fa fa-plus"></i></button>
-                                        </div>
-                                      </div>
-
-                                        <a href="#" class="fa fa-pencil txt-secondary"></a>
-                                </div>
-
-                                <div class="table-cell">
-                                    <span class="txt-secondary">$250.00</span>
-                                </div>
-
-                            </div> <!-- END TABLE ROW -->
-
-                        </div>
-                        </form>
+                <aside id="dashboard-primary-sidebar">
+                    <span class="h3 txt-dark">My Account <a href="#" class="fa fa-bars"></a></span>
+                    <nav id="dashboard-nav" class="txt-md">
+                        <ul>
+                            <li><a href="dashboard-home.html">Account Dashboard</a></li>    
+                            <li><a href="dashboard-account-information.html">Account Information</a></li>
+                            <li><a href="dashboard-address-book.html">Address Book</a></li>
+                            <li class="active"><a href="dashboard-my-orders.html">My Orders</a></li>
+                            <li><a href="dashboard-billing-agreements.html">Billing Agreements</a></li>
+                            <li><a href="dashboard-recurring-profiles.html">Recurring Profiles</a></li>
+                            <li><a href="dashboard-my-product-reviews.html">My Product Reviews</a></li>
+                            <li><a href="dashboard-my-tags.html">My Tags</a></li>
+                            <li><a href="dashboard-my-wishlist.html">My Wishlist</a></li>
+                            <li><a href="dashboard-my-applications.html">My Applications</a></li>
+                            <li><a href="dashboard-newsletter-subscriptions.html">Newsletter Subscriptions</a></li>
+                            <li><a href="dashboard-my-downloadable-products.html">My Downloadable Products</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <div class="widget">
+                        <strong class="h4">My Orders</strong>
+                        <span class="para">Last Ordered Items</span>
+                        
+                        <form class="primary-form">
+                        <ul class="basic-list order-list">
+                            <li><label>Samsung Galaxy - Black</label></li>
+                            <li><label><input type="checkbox" /> Samsung Galaxy Phone</label></li>
+                            <li><label><input type="checkbox" /> Apple iPhone 7</label></li>
+                            <li><label><input type="checkbox" /> Samsung S7 Edge</label></li>
+                            <li><label><input type="checkbox" /> Apple MacBook Pro</label></li>
+                            <li><label><input type="checkbox" /> Microsoft Surface Book Pro</label></li>
+                        </ul>
                             
-                            <footer class="dashboard-footer table default top-md-buffer">
-                            <div class="table-row">
-                                <div class="table-cell txt-md">
-                                    <a href="#" class="btn btn-basic">Continue Shopping</a>
-                                </div>
-
-                                <div class="table-cell txt-right">
-                                    <a href="#" class="btn btn-basic">Clear Shopping Cart</a> <a href="#" class="btn btn-basic">Update Shopping Cart</a>
-                                </div>
-                            </div> <!-- END ROW -->
-                        </footer>
-                        </div> <!-- END PANEL OUTLINE -->
-                    </div> <!-- END DASHBOARD SECONDARY CONTENT -->
-
-
-                    <aside id="dashboard-secondary-sidebar">
-                         <div class="table default panel-section panel-clear">
-                            <div class="table-row">
-                                <div class="panel panel-default panel-toggle table-cell">
-                                    <div class="panel-heading txt-sm">
-                                        <strong class="title txt-caps">Discount Codes</strong>                                    
-
-                                        <a href="#" class="btn btn-basic btn-toggle pull-right"><i class="fa fa-caret-down txt-light"></i></a>
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <span class="para txt-sm">
-                                            Lorem Ipsium
-                                        </span>
-                                    </div>
-                                </div> <!-- END PANEL -->
-                             </div> <!-- END TABLE ROW -->
-                        </div> <!-- END TABLE / PANEL SECTION -->
-                        
-                        <div class="table default panel-section panel-clear">
-                            <div class="table-row">
-                                <div class="panel panel-default panel-toggle panel-hidden table-cell">
-                                    <div class="panel-heading txt-sm">
-                                        <strong class="title txt-caps">Estimate Shipping and Tax</strong>                                    
-
-                                        <a href="#" class="btn btn-basic btn-toggle pull-right"><i class="fa fa-caret-down txt-light"></i></a>
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <span class="para txt-sm">
-                                            Lorem Ipsium
-                                        </span>
-                                    </div>
-                                </div> <!-- END PANEL -->
-                             </div> <!-- END TABLE ROW -->
-                        </div> <!-- END TABLE / PANEL SECTION -->
-                        
-                        
-                        <div class="table default panel-section panel-clear">
-                            <div class="table-row">
-                                <div class="panel panel-default table-cell">
-                                    <div class="panel-heading txt-sm">
-                                        <strong class="title txt-caps">Cart Totals</strong>                         
-                                    </div>
-
-                                    <div class="panel-body">
-                                        <div class="txt-md base-xs-large-buffer row-section">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                                    <span class="txt-light-dark">Subtotal</span>
-                                                </div>
-                                                
-                                                <div class="col-xs-6 col-sm-6 col-md-6 txt-right">
-                                                    <strong>$569.00</strong>
-                                                </div>
-                                            </div> <!-- END ROW -->
-                                            
-                                            
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-6 col-md-6">
-                                                    <span class="txt-light-dark">Grand Total</span>
-                                                </div>
-                                                
-                                                <div class="col-xs-6 col-sm-6 col-md-6 txt-right">
-                                                    <strong class="txt-lg">$569.00</strong>
-                                                </div>
-                                            </div> <!-- END ROW -->
-                                        </div>
-                                        <a href="#" class="btn btn-block btn-primary txt-lg">Proceed to Checkout</a>
-                                            <a href="#" class="link txt-md top-xs-medium-buffer txt-center">Checkout with Multiple Addresses</a>
-                                    </div>
-                                </div> <!-- END PANEL -->
-                             </div> <!-- END TABLE ROW -->
-                        </div> <!-- END TABLE / PANEL SECTION -->
-                    </aside> <!-- END DASHBOARD SECONDARY SIDEBAR -->
-               
+                            <input type="submit" value="Add to Cart" class="txt-sm btn-sm" />
+                        </form>
+                    </div>
+                </aside>
+                
+                <div id="dashboard-primary-content">
+                    <h1 class="light">Order #700000135 - Pending</h1>
                     
-                    <div class="clearfix"></div>
-                        
-                        <h3 class="txt-dark top-lg-buffer">Based on your selection, you may be interested in the following items:</h3>
-
+                    <h2 class="base-xs-medium-buffer">About this order: Order Information</h2>
                     
-                        <div class="row basic-gallery txt-md">
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
+                    <span class="para">Order Date: November 7, 2016</span>
+                    
+                    
+                    <div class="table default panel-section base-md-buffer">
+                       <div class="table-row">
+                            <div class="panel panel-default table-cell col-6">
+                                <div class="panel-heading txt-sm">
+                                    <strong class="title">Shipping Address</strong>                                    
+                                </div>
+                                
+                                <div class="panel-body">
+                                    <span class="para txt-sm">
+                                        asf adffsf<br />
+                                        15B Sheika Fatima Bldg Jaffliya<br />
+                                        Dubai, 1101<br />
+                                        United Arab Emirates<br />
+                                        T: 12312312
+                                    </span>
+                                </div>
+                            </div> <!-- END PANEL -->
+                       
+                        
+                        
+                            <div class="panel panel-default table-cell col-6">
+                                <div class="panel-heading txt-sm">
+                                    <strong class="title txt-caps">Shipping Method</strong>
+                                </div>
+                                
+                                <div class="panel-body">
+                                    <span class="para txt-sm">
+                                        Flat Rate - Fixed
+                                    </span>
+                                </div>
+                            </div> <!-- END PANEL -->
+                        </div>
+                    </div> <!-- END TABLE / PANEL SECTION -->
+                    
+                    
+                    
+                    <div class="table default panel-section base-md-buffer">
+                       <div class="table-row">
+                            <div class="panel panel-default table-cell col-6">
+                                <div class="panel-heading txt-sm">
+                                    <strong class="title">Billing Address</strong>                                    
+                                </div>
+                                
+                                <div class="panel-body">
+                                    <span class="para txt-sm">
+                                        asf adffsf<br />
+                                        15B Sheika Fatima Bldg Jaffliya<br />
+                                        Dubai, 1101<br />
+                                        United Arab Emirates<br />
+                                        T: 12312312
+                                    </span>
+                                </div>
+                            </div> <!-- END PANEL -->
+                       
+                        
+                        
+                            <div class="panel panel-default table-cell col-6">
+                                <div class="panel-heading txt-sm">
+                                    <strong class="title txt-caps">Payment Method</strong>
+                                </div>
+                                
+                                <div class="panel-body">
+                                    <span class="para txt-sm">
+                                        Check/Money order
+                                    </span>
+                                </div>
+                            </div> <!-- END PANEL -->
+                        </div>
+                    </div> <!-- END TABLE / PANEL SECTION -->
+                    
+                    
+                    <div class="table-responsive">
+                        <div class="table-primary">
+                            <div class="table txt-md txt-medium-dark">
+                                <header class="table-header table-row">
+                                    <div class="table-cell">Product Name</div>
+                                    <div class="table-cell col-2">SKU</div>
+                                    <div class="table-cell col-2">Price</div>
+                                    <div class="table-cell col-2">Qty</div>
+                                    <div class="table-cell col-2-fixed">Subtotal</div>
+                                </header>
 
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
-
-                            <div class="col-xs-12 col-sm-12 col-md-3">
-                                <div class="row">
-                                    <div class="product-image col-xs-4 col-sm-4 col-md-4">
-                                        <a href="#">
-                                            <img src="images/product-21.jpg" alt="" />
-                                        </a>
-                                    </div> <!-- END PRODUCT IMAGE -->
-
-                                    <div class="product-info col-xs-8 col-sm-8 col-md-8">
-                                        <span>Motorola Phone-Charcoal</span>
-                                        <strong class="h3 medium-lg txt-dark base-xs-medium-buffer">$199.00</strong>
-                                        <a href="#" class="btn btn-basic txt-md">Add to Cart</a>
-                                    </div> <!-- END PRODUCT INFO -->
-                                </div> <!-- END ROW -->
-                            </div> 
+                                <div class="table-content table-row">
+                                    <div class="table-cell">
+                                        Samsung Galaxy Phone<br />
+                                        <ul class="basic-list">
+                                            <li>
+                                                <b>Color</b>
+                                                <ul class="basic-list child">
+                                                    <li>Blue</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                     
+                                    </div>
+                                    <div class="table-cell">PC001-Blue</div>
+                                    <div class="table-cell">$250.00</div>
+                                    <div class="table-cell">Ordered: <b>1</b></div>
+                                    <div class="table-cell txt-right">$250.00</div>
+                                </div>
+                                
+                                <div class="table-content table-row">
+                                    <div class="table-cell">
+                                        Samsung Galaxy Black
+                                    </div>
+                                    <div class="table-cell">MOB-245663</div>
+                                    <div class="table-cell">$319.00</div>
+                                    <div class="table-cell">Ordered: <b>1</b></div>
+                                    <div class="table-cell txt-right">$319.00</div>
+                                </div>
+                            </div>
+                            
+                            <div class="table table-subgroup txt-md txt-medium-dark">
+                                <div class="table-content table-row">
+                                    <div class="table-cell col-9 txt-right">Subtotal</div>
+                                    <div class="table-cell col-2-fixed txt-right">$569</div>
+                                </div>
+                                <div class="table-content table-row">
+                                    <div class="table-cell col-9 txt-right">Shipping &amp; Handling</div>
+                                    <div class="table-cell col-2-fixed txt-right">$10</div>
+                                </div>
+                                
+                                <div class="table-content table-row">
+                                    <div class="table-cell col-9 txt-right txt-extra-lg"><strong>Grand Total</strong></div>
+                                    <div class="table-cell col-2-fixed txt-right txt-extra-lg"><strong>$579</strong></div>
+                                </div>
+                            </div>
+                        </div> <!-- END TABLE PRIMARY -->
+                    </div> <!-- END TABLE RESPONSIVE -->
+                    
+                   
+                    <footer class="dashboard-footer table default top-md-buffer">
+                        <div class="table-row">
+                            <div class="table-cell txt-md">
+                                <a href="dashboard-my-orders.html" class="link">&laquo; Back to My Orders</a>
+                            </div>
+                            
+                            <div class="table-cell txt-right">
+                                
+                            </div>
                         </div> <!-- END ROW -->
+                    </footer>
                     
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                </div> <!-- END PRIMARY WRAPPER -->
+                </div> <!-- END DASHBOARD PRIMARY CONTENT -->
             </div> <!-- END MAIN -->
         </main>
     </div> <!-- END CONTENT WRAP -->

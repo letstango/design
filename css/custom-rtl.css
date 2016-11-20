@@ -36,6 +36,10 @@ html[dir="rtl"] .row > div {
     float: right;
 }
 
+html[dir="rtl"] .basic-list ul.child {
+    padding-left: 0;
+    padding-right: 10px;
+}
 
 /**************************/
 /*** END GLOBAL CLASSES ***/
@@ -152,12 +156,6 @@ html[dir="rtl"] #header-middle.floating {
     width: 100%;
     position: fixed;
     top: 0;
-    transition: 0.4s;
-}
-
-html[dir="rtl"] body.animate #header-middle.floating {
-    right: 248px;
-    transition: 0.4s;
 }
 
 html[dir="rtl"] #brand-logo {
@@ -209,7 +207,8 @@ html[dir="rtl"] #header-shopping-cart ul.item-list .table-cell .title .fa-close 
 
 html[dir="rtl"] #header-middle .fa-bars {
     float: right;
-    margin: 0 0 0 30px;
+    margin: 0 -15px 0 0;
+    padding: 15px 15px 10px 30px;
 }
 
 html[dir="rtl"] #header-middle .process-button-group {
@@ -505,6 +504,44 @@ html[dir="rtl"] .primary-tabs-content .panel-title label + .icon {
 }
 
 /*
+    Dashboard Contents
+*/
+html[dir="rtl"] #dashboard-primary-content {
+    float: left;
+}
+
+html[dir="rtl"] .panel-section .panel.col-6 {
+    left: auto;
+    right: -8px;
+}
+
+html[dir="rtl"] .panel-section .panel.col-6:last-child {
+    right: auto;
+    left: -8px;
+}
+
+html[dir="rtl"] .panel .panel-heading a.link {
+    float: left!important;
+}
+
+html[dir="rtl"] .dashboard-footer .table-cell:first-child {
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+html[dir="rtl"] .dashboard-footer .table-cell:last-child {
+    padding-left: 0;
+    padding-right: 15px;
+}
+
+html[dir="rtl"] .dashboard-footer .table-cell.txt-right {
+    text-align: left!important;
+}
+
+html[dir="rtl"] #dashboard-secondary-content {
+    float: right;
+}
+/*
     Primary Sidebar
 */
 html[dir="rtl"] #primary-sidebar {
@@ -539,6 +576,30 @@ html[dir="rtl"] .primary-data-widget .table-cell:first-child {
 
 html[dir="rtl"] .secondary-data-widget .table-row.split.divider .table-cell:first-child {
     border-left: 1px #cccccc solid;
+}
+
+/*
+    Dashboard Sidebar
+*/
+html[dir="rtl"] #dashboard-primary-sidebar {
+    float: right;
+}
+
+html[dir="rtl"] #dashboard-nav > ul > li > a:before {
+    content: "\f0d9";
+    margin: 0 2px 0 10px;
+}
+
+html[dir="rtl"] #dashboard-primary-sidebar .h3 .fa-bars {
+    float: left;
+}
+
+html[dir="rtl"] #dashboard-secondary-sidebar {
+    float: left;
+}
+
+html[dir="rtl"] .panel-default .panel-heading a.btn-basic {
+    float: left!important;
 }
 /****************************/
 /*** END WEBSITE CONTENTS ***/
