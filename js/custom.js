@@ -22,6 +22,8 @@ $(document).ready(function() {
     });
     
     
+    
+    
 /*  
     This is the secondary floating header which only appears in Product page. 
 */
@@ -48,7 +50,42 @@ $(document).ready(function() {
 /*
     Primary Menu toggle feature for tablets and mobile resolutions
 */
+  
+
+    $('#page-header .fa-bars').on('click tap', function (e) {
+        e.preventDefault();
+        if ($('#header-middle').hasClass('floating')) {
+                $('html, body').animate({
+                    scrollTop: $("#page-header").offset().top
+                }, 1000, function() {
+                    $('body').delay(100).addClass('animate');
+                });
+                
+            } else {
+                $('body').toggleClass('animate');
+            }
+        return false;
+    });
     
+    $('.body-overlay').on('click tap swipeleft swiperight', function () {
+        
+        setTimeout(function(){
+            $('body').removeClass('animate');
+        }, 20)
+    });
+    
+    $("#header-middle.floating .fa-bars").click(function(e) {
+        e.preventDefault();
+        
+        $('html, body').animate({
+            scrollTop: $("#page-header").offset().top
+        }, 1000);
+});
+
+
+    /* Menu Toggle Script Version */
+    
+    /*
         var pageBody = document.getElementsByTagName("body"); //or use jQuery's $("#photo")
         var pageMenu = document.getElementById("header-base"); //or use jQuery's $("#photo")
         var headerMiddle = document.getElementById("header-middle");
@@ -57,31 +94,31 @@ $(document).ready(function() {
             if($('body').hasClass('animate')) {
             
                 if ($("#header-middle").hasClass('floating')) {
-                    TweenLite.to(pageBody, 0.6, {paddingLeft: "248px"});
+                    TweenLite.to(pageBody, 0.6, {paddingLeft: "248px", ease:Power4.easeOut});
 
-                    TweenLite.to(headerMiddle, 0.6, {left: "248px"});
+                    TweenLite.to(headerMiddle, 0.6, {x: "248px", ease:Power4.easeOut});
 
-                    TweenLite.to(pageMenu, 0.6, {left: "0"});   
+                    TweenLite.to(pageMenu, 0.6, {left: "0", ease:Power4.easeOut});   
                 } else {
-                    TweenLite.to(pageBody, 0.6, {paddingLeft: "248px"});
+                    TweenLite.to(pageBody, 0.6, {paddingLeft: "248px", ease:Power4.easeOut});
 
-                    TweenLite.to(pageMenu, 0.6, {left: "0"});   
+                    TweenLite.to(pageMenu, 0.6, {left: "0", ease:Power4.easeOut});   
                 }
             } else if($('body').not('.animate'))  {
 
                 if ($("#header-middle").hasClass('floating')) {
-                     TweenLite.to(pageBody, 0.6, {paddingLeft: "0px"});
+                     TweenLite.to(pageBody, 0.6, {paddingLeft: "0px", ease:Power4.easeOut});
 
-                    TweenLite.to(headerMiddle, 0.6, {left: "0px"});
+                    TweenLite.to(headerMiddle, 0.6, {x: "0px", ease:Power4.easeOut});
 
-                    TweenLite.to(pageMenu, 0.6, {left: "-248px"});   
+                    TweenLite.to(pageMenu, 0.6, {left: "-248px", ease:Power4.easeOut});   
                 } else {
-                    TweenLite.to(pageBody, 0.6, {paddingLeft: "0px"});
+                    TweenLite.to(pageBody, 0.6, {paddingLeft: "0px", ease:Power4.easeOut});
 
-                    TweenLite.to(pageMenu, 0.6, {left: "-248px"});   
+                    TweenLite.to(pageMenu, 0.6, {left: "-248px", ease:Power4.easeOut});   
                 }
             }
-        } /* End Function LTR ToggleMenu */
+        } 
     
     
         function toggleRTLMenu() {
@@ -168,7 +205,7 @@ $(document).ready(function() {
             TweenLite.to(headerMiddle, 0, {right: "0px"});
         }
     });
-    
+    */
     
 
 /*

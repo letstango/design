@@ -86,23 +86,23 @@
     /*
         Menu Toggle Animations
     */
-    body {
-        padding-left: 0;
+    body #wrapper {
+        overflow-x: visible;
+         transition: transform 0.8s ease;
     }
     
-    body.animate {
-/*        padding-left: 248px;*/
+    body.animate #wrapper {
+        transform: translateX(248px);
     }
     
-    body.animate:after {
+    body.animate #wrapper:after {
         content: "";
         width: 100%;
         height: 100%;
-        display: block;
         position: fixed;
         top: 0;
-        z-index: 99;
-        opacity: 0.15;
+        z-index: 999999;
+        opacity: 0.45;
         background: #000000;
     }
 }
@@ -300,21 +300,22 @@
         font-size: 12px;
         position: fixed;
         top: 0;
+        transition: transform 0.8s ease;
+        transform: translateX(-248px);
+    }
+
+/* Menu Toggle Script Version */
+/*
+    #header-base {
+        width: 248px;
+        height: 100%;
+        overflow-y: scroll;
+        font-size: 12px;
+        position: fixed;
+        top: 0;
         left: -248px;
-        /*-webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);*/
     }
-    
-    body.animate #header-base {
-        /*left: 0;*/
-        /*-webkit-transform: translate3d(0,0,0);
-        transform: translate3d(0,0,0);*/
-    }
-    
-    /*
-    #header-base.transform {
-        top: 120px;
-    }*/
+*/
     
 /* 
     Primary Menu 
@@ -465,6 +466,7 @@
     #header-middle .process-button-group {
         width: 100%!important;
         float: none!important;
+        clear: both;
     }
     
     #header-middle .h1 {

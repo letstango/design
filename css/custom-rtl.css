@@ -60,6 +60,12 @@ html[dir="rtl"] .basic-list ul.child {
 /**********************/
 /*** BASIC ELEMENTS ***/
 /**********************/
+
+html[dir="rtl"] body.animate .body-overlay {
+    left: auto;
+    right: 248px;
+}
+
 html[dir="rtl"] blockquote {
     padding: 0 20px 0 0;
 }
@@ -78,6 +84,7 @@ html[dir="rtl"] .select-wrapper .icon {
     left: 8px;
     right: auto;
 }
+
 
 /*
     Form Validator
@@ -219,6 +226,10 @@ html[dir="rtl"] #header-middle .process-button-group {
 html[dir="rtl"] #header-middle .h1 {
     float: left;
     padding: 0;
+}
+
+html[dir="rtl"] body.animate #header-middle.floating {
+    transform: translate(-248px,0,0);
 }
 
 /*

@@ -490,42 +490,29 @@ html {
     box-sizing: inherit;
 }
 
+
 body {
     min-height: 100vh;
     font-family: 'Shanti', sans-serif;
     /*font-family: 'Shadows Into Light', cursive;*/
     font-size: 14px;
     color: #444444;
-    animation-name: fadeAnimation;
-    animation-duration: 2s;
     margin: 0px;
     padding: 0px;
 }
 
 .body-overlay {
+    width: 100%;
+    height: 100%;
     display: none;
+    position: fixed;
+    top: 0;
+    left: 248px;
+    z-index: 999999;
 }
 
-body.animate .body-overlay {
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 238px;
-        z-index: 999;
-    }
-
-
-    /* For paage fade in animation */
-@keyframes fadeAnimation {
-    0% {
-        opacity: 0;
-    }
-    
-    100% {
-        opacity: 1;
-    }
+body.animate .body-overlay {    
+    display: block;
 }
 
 #wrapper {
@@ -1236,16 +1223,15 @@ ul#top-secondary-menu > li.compare-link > .compare-dropdown > ul > li.placeholde
     Header Middle
 */
 #header-middle.floating {
-    width: 100%;
+    width: 100%;    
     position: fixed;
     top: 0;
-    /*transition: 0.4s;*/
 }
 
+
 body.animate #header-middle.floating {
-    /*
-    left: 248px;
-    transition: 0.4s;*/
+    z-index: 99;
+    transform: translate(248px,0,0);
 }
 
 #header-middle {
